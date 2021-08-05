@@ -20,18 +20,32 @@ export default {
     return {
       tabbars: [
         {
-          title: '首页',
+          title: '网站首页',
           to: {
             name: 'Home'
           },
           icon: 'home-o'
         },
         {
-          title: '关于我',
+          title: '培训线路',
           to: {
             name: 'About'
           },
-          icon: 'user-o'
+          icon: 'apps-o'
+        },
+        {
+          title: '电话咨询',
+          to: {
+            name: 'About1'
+          },
+          icon: 'phone-o'
+        },
+        {
+          title: '返回顶部',
+          to: {
+            name: 'About2'
+          },
+          icon: 'back-top'
         }
       ]
     }
