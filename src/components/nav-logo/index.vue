@@ -12,10 +12,11 @@
       <van-icon name="wap-nav" class="wap-nav" @click="showPopup" />
     </header>
     <van-popup
-      v-model="popup"
+      :value="popup"
+      closeable
       close-icon="close"
       position="bottom"
-      style="height: 100%"
+      style="height: 100vh;"
       @click="closePopup"
     />
   </div>
