@@ -15,13 +15,13 @@ export const constantRouterMap = [
       {
         path: '/home',
         name: 'Home',
-        component: () => import('@/views/home/index'),
+        component: () => import('@/views/home'),
         meta: { title: '首页', keepAlive: false }
       },
       {
         path: '/about',
         name: 'About',
-        component: () => import('@/views/home/about'),
+        component: () => import('@/views/about'),
         meta: { title: '关于我', keepAlive: false }
       }
     ]
