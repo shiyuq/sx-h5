@@ -51,8 +51,10 @@ export default {
       this.$store.commit('app/setPopup', { value: true })
     },
     closePopup() {
-      console.log('111111111111 :>> ', 111111111111)
       this.$store.commit('app/setPopup', { value: false })
+    },
+    selectTab(item) {
+      this.$router.push({ path: item.router })
     }
   }
 }

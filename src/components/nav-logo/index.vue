@@ -16,9 +16,16 @@
       closeable
       close-icon="close"
       position="bottom"
-      style="height: 100vh;"
+      style="height: 100vh; background-color: #383735;"
       @click="closePopup"
-    />
+    >
+      <ul>
+        <li v-for="(item, index) in navList" :key="item.router">
+          <span v-if="index === currentActiveTabIndex" style="color: #a9050e;">{{ item.name }}</span>
+          <span v-else style="color: #fff;" @click="selectTab(item)">{{ item.name }}</span>
+        </li>
+      </ul>
+    </van-popup>
   </div>
 </template>
 
