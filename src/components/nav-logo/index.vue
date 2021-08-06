@@ -15,7 +15,7 @@
       :value="popup"
       closeable
       close-icon="close"
-      position="bottom"
+      position="top"
       style="height: 100vh; background-color: #383735;"
       @click="closePopup"
     >
