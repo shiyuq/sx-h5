@@ -53,7 +53,8 @@ export default {
     closePopup() {
       this.$store.commit('app/setPopup', { value: false })
     },
-    selectTab(item) {
+    selectTab(item, index) {
+      this.$store.commit('app/setCurrentActiveTabIndex', index)
       this.$router.push({ path: item.router })
     }
   }
