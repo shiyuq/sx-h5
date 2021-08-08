@@ -3,10 +3,17 @@ export default {
     return {
     }
   },
+  computed: {
 
-  computed: {},
+  },
 
-  mounted() {},
+  mounted () {
+    
+  },
 
-  methods: {}
+  methods: {
+    var slider = Swipe(document.getElementById('slider'), {
+      
+   });
+  }
 }
