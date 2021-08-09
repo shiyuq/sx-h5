@@ -1,19 +1,23 @@
+
 export default {
   data() {
     return {
     }
   },
-  computed: {
+  computed: {},
 
+  mounted() {
+    // this.swpier()
   },
 
-  mounted () {
-    
-  },
-
-  methods: {
-    var slider = Swipe(document.getElementById('slider'), {
-      
-   });
-  }
+  methods: {}
+  //   var slider = Swipe(document.getElementById('slider'), {
+  //  });
+  //   swiper() {
+  //     var slider = swipe(document.getElementById('slider'), {
+  //       startSlide: 4,
+  //       auto: 3000,
+  //       continuous: true,
+  //     })
+  //   }
 }
