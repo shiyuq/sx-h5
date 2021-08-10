@@ -1,20 +1,11 @@
 <template>
-  <div>
-  <div id="slider" class="swipe">
-      <div class="swipe-wrap">
-        <div><img src="" alt=""></div>
-        <div></div>
-        <div></div>
-      </div>
-  </div>
-  <button onclick="Swipe.prev()">prev</button>
-  <button onclick="Swipe.next()">next</button>
-  <div class="route">
-    <h2>培训线路</h2>
-    <div>
-      <img src="" alt="">
-      <p></p>
-    </div>
+  <div class="home">
+    <div class="home-swipe">
+      <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white" :show-indicators="false" @change="changeTab">
+        <van-swipe-item><img src="./images/1.jpg" alt="" /></van-swipe-item>
+        <van-swipe-item><img src="./images/2.jpg" alt="" /></van-swipe-item>
+        <van-swipe-item><img src="./images/3.jpg" alt="" /></van-swipe-item>
+      </van-swipe>
     </div>
   </div>
 </template>

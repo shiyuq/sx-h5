@@ -1,31 +1,12 @@
 header h1 {
   margin-left: 3%;
 }
-img {
-  display: block;
-  width: 70%;
-}
-.swipe {
-  overflow: hidden;
-  visibility: hidden;
-  position: relative;
-}
-.swipe-wrap {
-  overflow: hidden;
-  position: relative;
-}
-.swipe-wrap > figure {
-  float: left;
-  width: 100%;
-  position: relative;
-}
 
-.button{
-  margin:0 auto;
-}
-.route{
+.my-swipe .van-swipe-item {
+  color: #fff;
+  font-size: 20px;
   text-align: center;
-}
-.route > img{
-  float:left;
+  img {
+    width: 100%;
+  }
 }

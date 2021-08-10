@@ -1,23 +1,17 @@
-
 export default {
   data() {
     return {
+      currentIndex: 0
     }
   },
+
   computed: {},
 
-  mounted() {
-    // this.swpier()
-  },
+  mounted() {},
 
-  methods: {}
-  //   var slider = Swipe(document.getElementById('slider'), {
-  //  });
-  //   swiper() {
-  //     var slider = swipe(document.getElementById('slider'), {
-  //       startSlide: 4,
-  //       auto: 3000,
-  //       continuous: true,
-  //     })
-  //   }
+  methods: {
+    changeTab(index) {
+      this.currentIndex = index
+    }
+  }
 }
