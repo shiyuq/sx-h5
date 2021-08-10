@@ -6,6 +6,9 @@
         <van-swipe-item><img src="./images/2.jpg" alt="" /></van-swipe-item>
         <van-swipe-item><img src="./images/3.jpg" alt="" /></van-swipe-item>
       </van-swipe>
+      <div class="indicator">
+        <span v-for="(item, index) in 3" :key="index" :class="index === currentIndex ? 'on' : ''"></span>
+      </div>
     </div>
   </div>
 </template>
