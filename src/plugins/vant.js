@@ -8,7 +8,9 @@ import {
   TabbarItem,
   Icon,
   Sticky,
-  Popup
+  Popup,
+  Swipe,
+  SwipeItem
 } from 'vant'
 
 Vue.use(Button)
@@ -17,4 +19,6 @@ Vue.use(List)
 Vue.use(Icon)
 Vue.use(Sticky)
 Vue.use(Popup)
+Vue.use(Swipe)
+Vue.use(SwipeItem)
 Vue.use(Tabbar).use(TabbarItem)

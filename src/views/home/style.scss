@@ -20,12 +20,38 @@ img {
   position: relative;
 }
 
-.button{
-  margin:0 auto;
-}
-.route{
+.my-swipe .van-swipe-item {
+  color: #fff;
+  font-size: 20px;
   text-align: center;
+  img {
+    width: 100%;
+  }
 }
-.route > img{
-  float:left;
+.indicator {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    display: inline-block;
+    width: 2em;
+    height: 3px;
+    background-color: #cfcfcf;
+    margin: 0 4px;
+    margin-top: 2px;
+    text-indent: -99999em;
+  }
+  .on {
+    background-color: #f00e2a;
+  }
+  .button{
+    margin:0 auto;
+  }
+  .route{
+    text-align: center;
+  }
+  .route > img{
+    float:left;
+  }
 }

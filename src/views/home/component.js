@@ -10,7 +10,11 @@ export default {
     // this.swpier()
   },
 
-  methods: {}
+  methods: {
+    changeTab(index) {
+      this.currentIndex = index
+    }
+  }
   //   var slider = Swipe(document.getElementById('slider'), {
   //  });
   //   swiper() {
