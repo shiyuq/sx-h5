@@ -10,13 +10,6 @@
         <span v-for="(item, index) in 3" :key="index" :class="index === currentIndex ? 'on' : ''"></span>
       </div>
     </div>
-    <div class="route">
-    <h2>培训线路</h2>
-    <div>
-      <img src="" alt="">
-      <p></p>
-    </div>
-  </div>
   </div>
 </template>
 
