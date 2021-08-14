@@ -10,7 +10,10 @@ import {
   Sticky,
   Popup,
   Swipe,
-  SwipeItem
+  SwipeItem,
+  Image,
+  Col, Row,
+  Grid, GridItem
 } from 'vant'
 
 Vue.use(Button)
@@ -22,3 +25,8 @@ Vue.use(Popup)
 Vue.use(Swipe)
 Vue.use(SwipeItem)
 Vue.use(Tabbar).use(TabbarItem)
+Vue.use(Image)
+Vue.use(Col)
+Vue.use(Row)
+Vue.use(Grid)
+Vue.use(GridItem)
