@@ -1,6 +1,7 @@
 import Swipe from './components/swipe'
 import Peixunxianlu from './components/peixunxianlu'
 import Sidabaozhang from './components/sidabaozhang'
+import About from './components/about'
 
 export default {
   data() {
@@ -12,7 +13,8 @@ export default {
   components: {
     Swipe,
     Peixunxianlu,
-    Sidabaozhang
+    Sidabaozhang,
+    About
   },
 
   computed: {},

@@ -2,15 +2,6 @@
   background-color: #fff;
   padding: 10px;
 }
-.my-swipe .van-swipe-item {
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-  img {
-    width: 100%;
-    border:solid 5px #ccc;
-  }
-}
 .title {
   display: flex;
   flex-direction: column;
@@ -26,4 +17,13 @@
     color: #818181;
     font-size: 0.4rem;
   } 
+}
+.my-swipe .van-swipe-item {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  img {
+    width: 100%;
+    border:solid 5px #ccc;
+  }
 }

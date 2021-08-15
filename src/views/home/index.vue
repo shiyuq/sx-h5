@@ -3,6 +3,7 @@
     <Swipe />
     <Peixunxianlu />
     <Sidabaozhang />
+    <About />
   </div>
 </template>
 

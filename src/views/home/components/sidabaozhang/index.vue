@@ -4,7 +4,7 @@
       <h2>四大保障<span>优选平台</span></h2>
       <p>FOUR GUARANTEES</p>
     </div>
-    <!-- <van-image fit="contain" :src="require('./images/3.jpg')"/> -->
+    <van-image fit="contain" :src="require('./images/3.jpg')"/>
     <van-swipe class="my-swipe" :loop="false" :show-indicators="false">
       <!-- <van-swipe-item v-for="(image, index) in images" :key="index">
         <img v-lazy="images" />
