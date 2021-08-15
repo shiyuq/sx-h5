@@ -1,0 +1,29 @@
+.home-baozhang {
+  background-color: #fff;
+  padding: 10px;
+}
+.my-swipe .van-swipe-item {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  img {
+    width: 100%;
+    border:solid 5px #ccc;
+  }
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2{
+    color: #f00e2a;
+  }
+  span {
+    color:#333;
+    align-items:center;
+  }
+  p {
+    color: #818181;
+    font-size: 0.4rem;
+  } 
+}

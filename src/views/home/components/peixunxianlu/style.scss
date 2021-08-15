@@ -2,6 +2,16 @@
   background-color: #fff;
   padding: 10px;
 }
+.fangan .van-grid {
+  text-align: center;
+  width:640px;
+  .van-grid-item{
+    width:50%;
+  }
+  img{
+    width:100%;
+  }
+}
 
 .title {
   display: flex;

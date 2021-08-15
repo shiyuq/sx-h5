@@ -9,11 +9,11 @@ import {
   Icon,
   Sticky,
   Popup,
-  Swipe,
-  SwipeItem,
+  Swipe, SwipeItem,
   Image,
   Col, Row,
-  Grid, GridItem
+  Grid, GridItem,
+  Lazyload
 } from 'vant'
 
 Vue.use(Button)
@@ -22,11 +22,9 @@ Vue.use(List)
 Vue.use(Icon)
 Vue.use(Sticky)
 Vue.use(Popup)
-Vue.use(Swipe)
-Vue.use(SwipeItem)
+Vue.use(Swipe).use(SwipeItem)
 Vue.use(Tabbar).use(TabbarItem)
 Vue.use(Image)
-Vue.use(Col)
-Vue.use(Row)
-Vue.use(Grid)
-Vue.use(GridItem)
+Vue.use(Col).use(Row)
+Vue.use(Grid).use(GridItem)
+Vue.use(Lazyload)

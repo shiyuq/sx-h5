@@ -2,6 +2,7 @@
   <div class="home">
     <Swipe />
     <Peixunxianlu />
+    <Sidabaozhang />
   </div>
 </template>
 
