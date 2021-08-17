@@ -14,7 +14,9 @@ import {
   Col, Row,
   Grid, GridItem,
   // Lazyload,
-  Divider
+  Divider,
+  NavBar,
+  Pagination
 } from 'vant'
 
 Vue.use(Button)
@@ -30,3 +32,5 @@ Vue.use(Col).use(Row)
 Vue.use(Grid).use(GridItem)
 // Vue.use(Lazyload)
 Vue.use(Divider)
+Vue.use(NavBar)
+Vue.use(Pagination)

@@ -1,6 +1,11 @@
 <!-- home -->
 <template>
   <div class="about-container">
+    <van-nav-bar  left-text="返回" left-arrow>
+      <template #right>
+        <van-icon name="bars" size="18" />
+      </template>
+    </van-nav-bar>
     <div class="warpper">
       <div class="list">
         <div class="logo"></div>
@@ -21,6 +26,7 @@
         </div>
       </div>
     </div>
+    <van-pagination  class="paging" v-model="currentPage" :total-items="99" :show-page-size="5" force-ellipses/>
   </div>
 </template>
 
