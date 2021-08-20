@@ -1,0 +1,17 @@
+<!-- guanyuwomen -->
+<template>
+  <div>
+    <van-nav-bar  left-text="返回"  to="/" title="关于我们" left-arrow>
+      <template #right>
+        <van-icon name="bars" size="18" />
+      </template>
+    </van-nav-bar>
+    <form action="/">
+      <van-search v-model="value" show-action placeholder="请输入搜索关键词" @search="onSearch" @cancel="onCancel"></van-search>
+    </form>
+  </div>
+</template>
+
+<style lang="scss" src="./style.scss" scoped></style>
+
+<script src="./component.js"></script>

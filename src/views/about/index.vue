@@ -1,7 +1,7 @@
 <!-- home -->
 <template>
   <div class="about-container">
-    <van-nav-bar  left-text="返回" left-arrow>
+    <van-nav-bar  left-text="返回" title="培训线路" left-arrow>
       <template #right>
         <van-icon name="bars" size="18" />
       </template>

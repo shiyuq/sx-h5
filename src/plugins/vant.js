@@ -16,7 +16,9 @@ import {
   // Lazyload,
   Divider,
   NavBar,
-  Pagination
+  Pagination,
+  Search,
+  Toast
 } from 'vant'
 
 Vue.use(Button)
@@ -34,3 +36,5 @@ Vue.use(Grid).use(GridItem)
 Vue.use(Divider)
 Vue.use(NavBar)
 Vue.use(Pagination)
+Vue.use(Search)
+Vue.use(Toast)
