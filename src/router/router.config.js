@@ -19,10 +19,16 @@ export const constantRouterMap = [
         meta: { title: '首页', keepAlive: false }
       },
       {
-        path: '/about',
-        name: 'About',
-        component: () => import('@/views/about'),
+        path: '/peixunxianlu',
+        name: 'Peixunxianlu',
+        component: () => import('@/views/peixunxianlu'),
         meta: { title: '培训路线', keepAlive: false }
+      },
+      {
+        path: '/peixunlueying',
+        name: 'Peixunlueying',
+        component: () => import('@/views/peixunlueying'),
+        meta: { title: '培训掠影', keepAlive: false }
       },
       {
         path: '/guanyuwomen',
