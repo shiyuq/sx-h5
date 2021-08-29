@@ -4,6 +4,7 @@ import Sidabaozhang from './components/sidabaozhang'
 import About from './components/about'
 import Gemingjingshen from './components/gemingjingshen'
 import Dianhuazixun from '../dianhuazixun'
+import Gongsixinwen from './components/gongsixinwen'
 
 export default {
   data() {
@@ -18,7 +19,8 @@ export default {
     Sidabaozhang,
     About,
     Gemingjingshen,
-    Dianhuazixun
+    Dianhuazixun,
+    Gongsixinwen
   },
 
   computed: {},

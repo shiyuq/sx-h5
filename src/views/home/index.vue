@@ -6,6 +6,7 @@
     <About />
     <Gemingjingshen />
     <Dianhuazixun />
+    <Gongsixinwen />
   </div>
 </template>
 
