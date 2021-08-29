@@ -31,7 +31,25 @@ export const constantRouterMap = [
         meta: { title: '培训掠影', keepAlive: false }
       },
       {
-        path: '/guanyuwomen',
+        path: '/mingshifengcai',
+        name: 'Mingshifengcai',
+        component: () => import('@/views/mingshifengcai'),
+        meta: { title: '名师风采', keepAlive: false }
+      },
+      {
+        path: '/rongyuzizhi',
+        name: 'Rongyuzizhi',
+        component: () => import('@/views/rongyuzizhi'),
+        meta: { title: '荣誉资质', keepAlive: false }
+      },
+      {
+        path: '/xinwendongtai',
+        name: 'Xinwendongtai',
+        component: () => import('@/views/xinwendongtai'),
+        meta: { title: '新闻动态', keepAlive: false }
+      },
+      {
+        path: '/',
         name: 'Guanyuwomen',
         component: () => import('@/views/guanyuwomen'),
         meta: { title: '关于我们', keepAlive: false }
