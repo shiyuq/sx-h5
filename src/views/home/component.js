@@ -2,6 +2,8 @@ import Swipe from './components/swipe'
 import Peixunxianlu from './components/peixunxianlu'
 import Sidabaozhang from './components/sidabaozhang'
 import About from './components/about'
+import Gemingjingshen from './components/gemingjingshen'
+import Dianhuazixun from '../dianhuazixun'
 
 export default {
   data() {
@@ -14,7 +16,9 @@ export default {
     Swipe,
     Peixunxianlu,
     Sidabaozhang,
-    About
+    About,
+    Gemingjingshen,
+    Dianhuazixun
   },
 
   computed: {},

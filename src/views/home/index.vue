@@ -4,6 +4,8 @@
     <Peixunxianlu />
     <Sidabaozhang />
     <About />
+    <Gemingjingshen />
+    <Dianhuazixun />
   </div>
 </template>
 

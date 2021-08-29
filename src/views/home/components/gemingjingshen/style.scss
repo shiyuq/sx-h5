@@ -1,0 +1,54 @@
+.home {
+  background-color: #fff;
+  .intro{
+    padding:10px;
+    h5{
+      font-size: 18px;
+      color:#333;
+      text-align: center;
+      padding: 10px 0;
+    }
+    p{
+      font-size: 14px;
+      color:#555;
+      text-align: justify;
+    }
+  }
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  margin: 10px auto;
+  padding: 50px 0;
+  width: 100%;
+  h2{
+    color: #be0007;
+    font-size: 0.67rem;
+  }
+  span {
+    font-size: 0.53rem;
+    color:#333;
+    align-items:center;
+  }
+  p {
+    color: #818181;
+    font-size: 0.4rem;
+  } 
+  .redline{
+    margin-top: 10px;
+    width:20%;
+    border:solid 1px #be0007;
+    background-color: #f00e2a;
+  }
+}
+.my-swipe .van-swipe-item {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  img {
+    width: 100%;
+    border:solid 5px #ccc;
+  }
+}
