@@ -18,7 +18,7 @@ import {
   NavBar,
   Pagination,
   Search,
-  Toast
+  Tab, Tabs
 } from 'vant'
 
 Vue.use(Button)
@@ -37,4 +37,4 @@ Vue.use(Divider)
 Vue.use(NavBar)
 Vue.use(Pagination)
 Vue.use(Search)
-Vue.use(Toast)
+Vue.use(Tab).use(Tabs)

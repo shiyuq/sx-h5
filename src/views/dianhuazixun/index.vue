@@ -4,7 +4,7 @@
       <h2>电话咨询</h2>
       <p>CONTACT US</p>
     </div>
-    <van-image fit="contain" :src="require('./images/call.jpg')"/>
+    <a href="tel:<18018027271>"><van-image fit="contain" :src="require('./images/call.jpg')"/></a>
   </div>
 </template>
 

@@ -1,4 +1,20 @@
 .home {
   background-color: #fff;
-  padding: 10px;
+  padding: 20px;
+  .title{
+    text-align: center;
+  }
+}
+van-tabs{
+  color:#fd581f;
+  background-color:#fd581f;
+  van-tab{
+    .news{
+      
+      background:red;
+    }
+    .action{
+      background:red;
+    }
+  }
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="home-peixun">
-    <van-nav-bar  left-text="返回" to="home" title="培训线路" left-arrow>
+    <van-nav-bar  left-text="返回" :to="item.to" title="培训线路" :key="index" left-arrow>
       <template #right>
         <van-icon name="bars" size="18" />
       </template>
