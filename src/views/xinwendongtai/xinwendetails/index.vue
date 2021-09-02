@@ -1,18 +1,12 @@
 <!-- guanyuwomen -->
 <template>
   <div class="home">
-    <van-nav-bar  left-text="返回" @click="back" title="新闻动态" left-arrow>
+    <van-nav-bar  left-text="返回" :to="'home'" title="常见问题解答" left-arrow>
     </van-nav-bar>
     <div class="news">
-      <ul>
-        <li>
-          <div class="title"></div>
-          <p></p>
-        </li>
-        <li>
-
-        </li>
-      </ul>
+    </div>
+    <div class="xiangguanzixun">
+      <ul></ul>
     </div>
    ·<van-pagination v-model="currentPage" :page-count="4" mode="simple" />
   </div>

@@ -6,8 +6,5 @@ export default {
   mounted() {
   },
   methods: {
-    back() {
-      this.$router.go(-1)
-    }
   }
 }
