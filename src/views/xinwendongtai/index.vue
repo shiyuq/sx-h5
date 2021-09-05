@@ -9,9 +9,7 @@
           <div class="title"></div>
           <p></p>
         </li>
-        <li>
-
-        </li>
+        <li></li>
       </ul>
     </div>
    ·<van-pagination v-model="currentPage" :page-count="4" mode="simple" />
