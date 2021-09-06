@@ -22,6 +22,19 @@
         <p>{{ item.content }}</p>
       </li>
     </ul>
+    <ul class="menu">
+      <li
+        v-for="(item, index) in titleList"
+        :key="index"
+        :class="{ cur: iscur === index }"
+        @mouseover="setIscur(index)"
+        @mouseenter="setAutoplay()"
+        @mouseleave="changeAutoplay()"
+      >
+        <img src="./images/arrow.png" alt="" />
+        {{ item.title }}
+      </li>
+    </ul>
   </div>
 </template>
 

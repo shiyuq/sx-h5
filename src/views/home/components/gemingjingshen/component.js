@@ -2,6 +2,22 @@ export default {
   name: 'gemingjinshen',
   data() {
     return {
+      iscur: 0,
+      autoplay: true,
+      titleList: [
+        {
+          title: '塔里木河'
+        },
+        {
+          title: '丝绸之路'
+        },
+        {
+          title: '昆岗文化'
+        },
+        {
+          title: '三五九旅'
+        }
+      ],
       imgList: [
         {
           id: '01',
@@ -39,5 +55,19 @@ export default {
 
   mounted() {},
 
-  methods: {}
+  methods: {
+    setIscur(index) {
+      this.$refs.remarkCarusel.setActiveItem(index)
+      this.iscur = index
+    },
+    change(index) {
+      this.iscur = index
+    },
+    setAutoplay() {
+      this.autoplay = false
+    },
+    changeAutoplay() {
+      this.autoplay = true
+    }
+  }
 }
