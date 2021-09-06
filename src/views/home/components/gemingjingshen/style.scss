@@ -100,12 +100,13 @@
   overflow: hidden;
   width: 100%;
   text-align: center;
-  padding-bottom: 8px;
+  padding: 8px;
   margin-bottom: 30px;
+
   li {
     display: inline-block;
     margin: 0 6px;
-    width: 120px;
+    width: 80px;
     height: 30px;
     background-color: rgba(247, 240, 240, 0.5);
     text-align: center;
@@ -118,13 +119,13 @@
     img {
       display: none;
       position: absolute;
-      bottom: -8px;
-      left: 67px;
+      bottom: 30px;
+      left: 30px;
     }
   }
   .cur {
-    background-color: #df131e;
-    border-color: #df131e;
+    background-color: #be0008;
+    border-color: #be0008;
     color: #fff;
     img {
       display: block;
