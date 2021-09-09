@@ -4,16 +4,28 @@
       <h2>四大保障<span>优选平台</span></h2>
       <p>FOUR GUARANTEES</p>
     </div>
-    <van-image fit="contain" :src="require('./images/3.jpg')"/>
-    <van-swipe class="my-swipe" :loop="false" :show-indicators="false">
-      <!-- <van-swipe-item v-for="(image, index) in images" :key="index">
-        <img v-lazy="images" />
-      </van-swipe-item> -->
-       <van-swipe-item><img src="./images/3-1.jpg" alt="" /></van-swipe-item>
-       <van-swipe-item><img src="./images/3-2.jpg" alt="" /></van-swipe-item>
-       <van-swipe-item><img src="./images/3-3.jpg" alt="" /></van-swipe-item>
-       <van-swipe-item><img src="./images/3-4.jpg" alt="" /></van-swipe-item>
+    <van-swipe @change="change" class="my-swipe" :loop="false" :show-indicators="false">
+       <van-swipe-item v-for="(item,index) in imgList" :key="index">
+         <img :src="item.imgUrl" :alt="item.alt" width="324" height="207" />
+         <div class="intro">
+          <h5>{{item.title}} </h5>
+          <p> {{item.content}}</p>
+        </div>
+       </van-swipe-item>
     </van-swipe>
+    <ul class="menu">
+      <li
+        v-for="(item, index) in titleList"
+        :key="index"
+        :class="{ cur: iscur === index }"
+        @mouseover="setIscur(index)"
+        @mouseenter="setAutoplay()"
+        @mouseleave="changeAutoplay()"
+      >
+        <img src="./images/arrow.png" alt="" />
+        {{ item.title }}
+      </li>
+    </ul>
   </div>
 </template>
 
