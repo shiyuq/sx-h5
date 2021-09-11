@@ -6,18 +6,18 @@
     </div>
     <div class="fangan">
       <van-grid clickable :colum-num="2">
-        <van-grid-item text="方案" to="/">
+        <van-grid-item text="方案1" to="/">
           <van-image :src="require('./images/fangan1.jpg')"></van-image>
         </van-grid-item>
-        <van-grid-item text="fangan2">
+        <van-grid-item text="方案2">
           <van-image :src="require('./images/fangan2.jpg')"></van-image>
         </van-grid-item>
       </van-grid>
       <van-grid clickable :colum-num="2">
-        <van-grid-item text="fangan3">
+        <van-grid-item text="方案3">
           <van-image :src="require('./images/fangan3.jpg')"></van-image>
         </van-grid-item>
-        <van-grid-item text="fangan4">
+        <van-grid-item text="方案4">
           <van-image :src="require('./images/fangan4.jpg')"></van-image>
         </van-grid-item>
       </van-grid>
