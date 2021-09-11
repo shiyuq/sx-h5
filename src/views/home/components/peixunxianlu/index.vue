@@ -5,7 +5,7 @@
       <p>PRODUCT</p>
     </div>
     <div class="fangan">
-      <van-grid clickable :colum-num="2" :gutter="10" :icon-size="200">
+      <van-grid clickable :colum-num="2">
         <van-grid-item text="方案" to="/">
           <van-image :src="require('./images/fangan1.jpg')"></van-image>
         </van-grid-item>
@@ -13,7 +13,7 @@
           <van-image :src="require('./images/fangan2.jpg')"></van-image>
         </van-grid-item>
       </van-grid>
-      <van-grid clickable :colum-num="2" :gutter="10" :icon-size="200">
+      <van-grid clickable :colum-num="2">
         <van-grid-item text="fangan3">
           <van-image :src="require('./images/fangan3.jpg')"></van-image>
         </van-grid-item>

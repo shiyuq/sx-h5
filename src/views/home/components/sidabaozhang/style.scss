@@ -1,6 +1,6 @@
 .home-baozhang {
   background-color: #fff;
-  padding: 10px;
+  padding: 10px 0;
 }
 .title {
   display: flex;
@@ -31,17 +31,31 @@
     background-color: #f00e2a;
   }
 }
-.my-swipe .van-swipe{
-  background: src='./images/3.jpg';
+.my-swipe{
+  // background: './images/3.jpg'; 问题
   .van-swipe-item {
-    width:324px;
-    height: 207px;
+    width:100%;
     color: #fff;
     font-size: 20px;
     text-align: center;
     img {
-      width: 100%;
+      width: 324px;
+      height: 207px;
       border:solid 5px #ccc;
+    }
+    .intro{
+      margin: 10px;
+      h5{
+        margin: 5px 0;
+        font-size: 17px;
+        text-align: center;
+        color:#333;
+      }
+      p{
+        font-size: 15px;
+        text-align: justify;
+        color:#555;
+      }
     }
   }
 }

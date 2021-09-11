@@ -1,7 +1,7 @@
 .home {
   background-color: #fff;
   .intro{
-    padding:10px;
+    padding:0 10px;
     h5{
       font-size: 18px;
       color:#333;
@@ -21,7 +21,7 @@
   align-items: center;
   background-color: #f2f2f2;
   margin: 10px auto;
-  padding: 50px 0;
+  padding: 40px 0;
   width: 100%;
   h2{
     color: #be0007;
@@ -44,24 +44,42 @@
     background-color: #f00e2a;
   }
 }
-.my-swipe .van-swipe-item {
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-  img {
-    width: 100%;
-    border:solid 5px #ccc;
+.my-swipe{
+  // background: './images/3.jpg'; 问题
+  .van-swipe-item {
+    width:100%;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    img {
+      width: 324px;
+      height: 207px;
+      border:solid 5px #ccc;
+    }
+    .intro{
+      margin: 10px;
+      h5{
+        margin: 5px 0;
+        font-size: 17px;
+        text-align: center;
+        color:#333;
+      }
+      p{
+        font-size: 15px;
+        text-align: justify;
+        color:#555;
+      }
+    }
   }
 }
 .menu {
   overflow: hidden;
   width: 100%;
   text-align: center;
-  padding: 8px;
   margin-bottom: 30px;
   li {
     display: inline-block;
-    margin: 0 6px;
+    margin: 10px 6px;
     width: 80px;
     height: 30px;
     background-color: rgba(247, 240, 240, 0.5);

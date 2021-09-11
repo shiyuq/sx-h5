@@ -6,7 +6,7 @@
     </div>
     <van-swipe @change="change" class="my-swipe" :loop="false" :show-indicators="false">
        <van-swipe-item v-for="(item,index) in imgList" :key="index">
-         <img :src="item.imgUrl" :alt="item.alt" width="324" height="207" />
+         <img :src="item.imgUrl" :alt="item.alt" />
          <div class="intro">
           <h5>{{item.title}} </h5>
           <p> {{item.content}}</p>
