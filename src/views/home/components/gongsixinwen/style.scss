@@ -24,15 +24,32 @@
     }
     .news{
       height: 200px;
-      width: 89%;
-      background:red;
-      margin: 0 20px;
+      width: 91%;
+      background:#fff;
+      margin: 2px 15px;
     }
     .action{
-      background:red;
-      width:3200x;
-      height:400px;
-      
+      height: 200px;
+      width: 91%;
+      background:#fff;
+      margin: 2px 15px;
+      display:flex;
+      img{
+        width:124px ;
+        height: 69px;
+        margin: 25px 30px;
+      }
+      .detail{
+        width: 50%;
+        h5{
+          font-size: 15px;
+          padding: 25px 0 10px 0;
+        }
+        p{
+          font-size: 14px;
+          color:#555;
+        }
+      }
     }
   }
   

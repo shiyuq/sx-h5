@@ -43,8 +43,8 @@ export default {
           id: '04',
           imgUrl: require('./images/3-4.jpg'),
           alt: '创新特色',
-          title: '创新特色',
-          content: '不断更新培训理念，创新培训内容，改进培训方式，将感性体验与理性认知升华相结合、直观感受与现场教学相结合，使党性培训的形式和内容更加立体丰富。'
+          title: '创新特色'
+
         }
       ]
     }
@@ -55,10 +55,10 @@ export default {
   mounted() {},
 
   methods: {
-    setIscur(index) {
-      this.$refs.remarkCarusel.setActiveItem(index)
-      this.iscur = index
-    },
+    // setIscur(index) {
+    //   this.$refs.remarkCarusel.setActiveItem(index)
+    //   this.iscur = index
+    // },
     change(index) {
       this.iscur = index
     },

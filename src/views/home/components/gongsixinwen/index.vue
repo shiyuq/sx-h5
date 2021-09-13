@@ -6,10 +6,17 @@
      <!-- v-model="active"  -->
     <van-tabs type="card">
       <van-tab title="公司新闻">
-        <div class="news">内容一</div>
+        <div class="news">
+        </div>
       </van-tab>
       <van-tab title="行业动态">
-        <div class="action">内容二</div>
+        <div class="action">
+          <img src="./images/1.jpg" alt="" />
+          <div class="detail">
+            <h5>标题</h5>
+            <p>正文</p>
+          </div>
+        </div>
       </van-tab>
     </van-tabs>
   </div>
