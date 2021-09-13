@@ -14,6 +14,10 @@ export default {
     },
     onCancel() {
       Toast('取消')
+    },
+    gotoMenu() {
+      this.$router.go(-1)
+      // this.$router.go('/home')
     }
   }
 }

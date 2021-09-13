@@ -1,7 +1,7 @@
 <!-- guanyuwomen -->
 <template>
   <div>
-    <van-nav-bar  left-text="返回"  to="home" title="关于我们" left-arrow>
+    <van-nav-bar  left-text="返回" @click-left="gotoMenu"    title="关于我们" left-arrow>
       <template #right>
         <van-icon name="bars" size="18" />
       </template>

@@ -49,7 +49,7 @@ export const constantRouterMap = [
         meta: { title: '新闻动态', keepAlive: false }
       },
       {
-        path: '/',
+        path: '/guanyuwomen',
         name: 'Guanyuwomen',
         component: () => import('@/views/guanyuwomen'),
         meta: { title: '关于我们', keepAlive: false }

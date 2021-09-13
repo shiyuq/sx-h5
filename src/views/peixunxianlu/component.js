@@ -7,5 +7,10 @@ export default {
 
   mounted() {},
 
-  methods: {}
+  methods: {
+    gotoMenu() {
+      this.$router.go(-1)
+      // this.$router.go('/home')
+    }
+  }
 }
