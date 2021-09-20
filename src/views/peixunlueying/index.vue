@@ -1,7 +1,7 @@
-<!-- guanyuwomen -->
+<!-- peixunlueying -->
 <template>
   <div class="home">
-    <van-nav-bar  left-text="返回" :to="'/home'" title="培训掠影" left-arrow>
+    <van-nav-bar  left-text="返回" @click-left="gotoMenu"   title="培训掠影" left-arrow>
       <template #right>
         <van-icon name="bars" size="18" />
       </template>

@@ -1,3 +1,4 @@
+<!-- peixunxianlu -->
 <template>
   <div class="home-peixun">
     <van-nav-bar  left-text="返回" @click-left="gotoMenu"  title="培训线路" left-arrow>
