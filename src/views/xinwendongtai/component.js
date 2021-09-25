@@ -6,7 +6,7 @@ export default {
   mounted() {
   },
   methods: {
-    back() {
+    gotoMenu() {
       this.$router.go(-1)
     }
   }

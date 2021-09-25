@@ -1,7 +1,7 @@
 <!-- guanyuwomen -->
 <template>
   <div class="home">
-    <van-nav-bar  left-text="返回" :to="'home'" title="荣誉资质" left-arrow>
+    <van-nav-bar  left-text="返回" @click-left="gotoMenu" title="荣誉资质" left-arrow>
     </van-nav-bar>
     <div class="pic">
       <van-grid clickable :colum-num="2" :gutter="10" :icon-size="200">

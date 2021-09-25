@@ -1,7 +1,7 @@
 <!-- guanyuwomen -->
 <template>
   <div class="home">
-    <van-nav-bar  left-text="返回" @click="back" title="新闻动态" left-arrow>
+    <van-nav-bar  left-text="返回" @click-left="gotoMenu" title="新闻动态" left-arrow>
     </van-nav-bar>
     <div class="news">
       <ul>
