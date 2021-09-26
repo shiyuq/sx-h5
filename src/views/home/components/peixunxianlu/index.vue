@@ -5,7 +5,23 @@
       <p>PRODUCT</p>
     </div>
     <div class="fangan">
-      <van-grid clickable :colum-num="2">
+      <van-row type="flex" justify="space-around">
+        <van-col span="6">
+          <img :src="require('./images/fangan1.jpg')"/>
+        </van-col>
+        <van-col span="6">
+          <img :src="require('./images/fangan2.jpg')"/>
+        </van-col>
+      </van-row>
+      <van-row type="flex" justify="space-around">
+        <van-col span="6">
+          <img :src="require('./images/fangan3.jpg')"/>
+        </van-col>
+        <van-col span="6">
+          <img :src="require('./images/fangan4.jpg')"/>
+        </van-col>
+      </van-row>
+      <!-- <van-grid clickable :colum-num="2">
         <van-grid-item text="方案1" to="/">
           <van-image :src="require('./images/fangan1.jpg')"></van-image>
         </van-grid-item>
@@ -20,7 +36,7 @@
         <van-grid-item text="方案4">
           <van-image :src="require('./images/fangan4.jpg')"></van-image>
         </van-grid-item>
-      </van-grid>
+      </van-grid> -->
     </div>
     <div class="more">查看更多线路>></div>
   </div>

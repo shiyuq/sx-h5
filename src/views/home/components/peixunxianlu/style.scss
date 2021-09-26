@@ -5,22 +5,28 @@
 .fangan{
   text-align: center;
   width:100%;
-  margin:10px auto;
-  
-  .van-grid-item{
-    width:47%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 5px;
-    .van-grid-item__content{
-      padding: 0;
-    }
-      .van-image{
-        width:169px;
-        height:156px;
+  margin:10px;
+  .van-row{
+    .van-col{
+      img{
+        width: 100%;
       }
+    }
   }
+  // .van-grid-item{
+  //   width:47%;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   padding: 0;
+  //   margin: 5px;
+  //   .van-grid-item__content{
+  //     padding: 0;
+  //   }
+  //     .van-image{
+  //       width:169px;
+  //       height:156px;
+  //     }
+  // }
 }
 
 .title {
