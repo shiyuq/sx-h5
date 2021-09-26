@@ -5,19 +5,19 @@
       <p>PRODUCT</p>
     </div>
     <div class="fangan">
-      <van-row type="flex" justify="space-around">
-        <van-col span="6">
+      <van-row type="flex" justify="space-between">
+        <van-col span="10">
           <img :src="require('./images/fangan1.jpg')"/>
         </van-col>
-        <van-col span="6">
+        <van-col span="10" offset="4">
           <img :src="require('./images/fangan2.jpg')"/>
         </van-col>
       </van-row>
       <van-row type="flex" justify="space-around">
-        <van-col span="6">
+        <van-col span="10">
           <img :src="require('./images/fangan3.jpg')"/>
         </van-col>
-        <van-col span="6">
+        <van-col span="10">
           <img :src="require('./images/fangan4.jpg')"/>
         </van-col>
       </van-row>
