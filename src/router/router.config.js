@@ -105,32 +105,8 @@ export const constantRouterMap = [
       // {
       //   path: '/peixunlueying1',
       //   name: 'Peixunlueying1',
-      //   component: () => import('../views/photoDetail'),
+      //   component: () => import('../views/mingshidetail'),
       //   meta: { title: '培训掠影1', keepAlive: false }
-      // }
-      // {
-      //   path: '/qiyejianjie',
-      //   name: 'Qiyejieshao',
-      //   component: () => import('../views/companyProfile'),
-      //   meta: { title: '企业简介', keepAlive: false }
-      // },
-      // {
-      //   path: '/qiyewenhua',
-      //   name: 'Qiyewenhua',
-      //   component: () => import('../views/companyCulture'),
-      //   meta: { title: '企业文化', keepAlive: false }
-      // },
-      // {
-      //   path: '/peixunjidi',
-      //   name: 'Peixunjidi',
-      //   component: () => import('../views/productionBase'),
-      //   meta: { title: '培训基地', keepAlive: false }
-      // },
-      // {
-      //   path: '/rencaizhaopin',
-      //   name: 'Rencaizhaopin',
-      //   component: () => import('../views/talents'),
-      //   meta: { title: '人才招聘', keepAlive: false }
       // }
       {
         path: '/xinwendongtai',

@@ -4,5 +4,37 @@
   .news{
     width:100%;
     text-align: justify;
+    margin: 0 10px;
+    .title{
+      color:#be0008;
+      font-size: 14px;
+      font-weight: bold;
+      border-bottom: solid 1px #ccc;
+      span{
+        font-size: 13px;
+        color:#ccc;
+        font-weight: normal;
+      }
+    }
+    p{
+      margin: 5px 0;
+      font-size: 13px;
+    }
+  }
+  .zixun{
+    background:#ccc;
+    width: 100%;
+    text-align: center;
+    margin:5px 0;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .tuijian{
+    background:#ccc;
+    width:100%;
+    text-align: center;
+    margin:5px 0;
+    line-height: 20px;
+    font-size: 14px;
   }
 }
