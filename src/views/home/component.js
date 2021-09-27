@@ -23,6 +23,11 @@ export default {
     Gongsixinwen
   },
 
+  // async created() {
+  //   const res = await service.getAddressList()
+  //   console.log('res1111111111 :>> ', res)
+  // },
+
   computed: {},
 
   mounted() {},

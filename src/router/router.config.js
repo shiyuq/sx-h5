@@ -6,14 +6,14 @@ export const constantRouterMap = [
   {
     path: '/',
     component: () => import('@/views/layouts'),
-    redirect: '/home',
+    redirect: '/',
     meta: {
       title: '首页',
       keepAlive: false
     },
     children: [
       {
-        path: '/home',
+        path: '/',
         name: 'Home',
         component: () => import('@/views/home'),
         meta: { title: '首页', keepAlive: false }

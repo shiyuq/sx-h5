@@ -1,7 +1,2 @@
-const api = {
-  Login: '/user/login',
-  UserInfo: '/user/userinfo',
-  UserName: '/user/name'
-}
-
-export default api
+export * from './address-service'
+export * from './news-service'
