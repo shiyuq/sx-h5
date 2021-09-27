@@ -18,7 +18,13 @@
        <img class="icon" :src="require('./images/mail.png')">
 邮箱：364361414@qq.com
     </div>
-    <img :src="require('./images/map.jpg')"/>
+     <div class="navigation">
+        <a href="https://www.amap.com/place/B0FFH0DMU6">
+          <img :src="require('./images/map.jpg')"/>
+          <br />
+          <span>立即导航</span>
+        </a>
+      </div>
      <form action="/">
       <van-search v-model="value" show-action placeholder="请输入搜索关键词" @search="onSearch" @cancel="onCancel"></van-search>
     </form>

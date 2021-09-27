@@ -3,17 +3,36 @@
   margin:10px;
   text-align: center;
   .lianxi{
-    margin: 20px;
-    text-align: center;
+    display:flex;
+    margin: 15px;
+    justify-content: center;
     font-size: 15px;
     color:#555;
     .icon{
       width: 15px;
     }
   }
-  img{
-    width:90%;
-    margin: 10px;
+  .navigation{
     align-items: center;
+    text-align: center;
+    img{
+      width:90%;
+      margin: 10px;
+    }
+    span{
+      font-size: 15px;
+      color:#555;
+    }
+    a {
+      text-decoration: none;
+      img {
+        border: 0;
+        width: 400px;
+        height: 425px;
+      }
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   }
 }
