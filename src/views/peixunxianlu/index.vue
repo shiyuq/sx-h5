@@ -7,23 +7,14 @@
       </template>
     </van-nav-bar>
     <div class="fangan">
-       <van-grid clickable :colum-num="2">
-        <van-grid-item text="方案1" to="/">
-          <van-image :src="require('./images/fangan1.jpg')"></van-image>
-        </van-grid-item>
-        <van-grid-item text="方案2">
-          <van-image :src="require('./images/fangan2.jpg')"></van-image>
-        </van-grid-item>
-      </van-grid>
-      <van-grid clickable :colum-num="2">
-        <van-grid-item text="方案3">
-          <van-image :src="require('./images/fangan3.jpg')"></van-image>
-        </van-grid-item>
-        <van-grid-item text="方案4">
-          <van-image :src="require('./images/fangan4.jpg')"></van-image>
-        </van-grid-item>
-      </van-grid>
+        <div v-for="(route, index) in routes" :key="index" class="route-container">
+        <div class="route-single">
+          <img :src="route.url" alt="" />
+          <span>{{ route.name }}</span>
+        </div>
+      </div>
     </div>
+    <van-pagination  class="paging" v-model="currentPage" :total-items="99" :show-page-size="5" force-ellipses/>
   </div>
 </template>
 

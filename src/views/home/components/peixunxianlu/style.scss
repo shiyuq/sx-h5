@@ -9,6 +9,7 @@
   .route-container {
     width: 50%;
     .route-single {
+      box-shadow: 0 0 10px #000;
       margin: 10px 5px;
       display: flex;
       flex-direction: column;
@@ -18,20 +19,6 @@
       }
     }
   }
-  // .van-grid-item{
-  //   width:47%;
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   padding: 0;
-  //   margin: 5px;
-  //   .van-grid-item__content{
-  //     padding: 0;
-  //   }
-  //     .van-image{
-  //       width:169px;
-  //       height:156px;
-  //     }
-  // }
 }
 
 .title {

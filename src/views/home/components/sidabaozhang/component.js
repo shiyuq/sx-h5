@@ -43,8 +43,8 @@ export default {
           id: '04',
           imgUrl: require('./images/3-4.jpg'),
           alt: '创新特色',
-          title: '创新特色'
-
+          title: '创新特色',
+          content: '创新特色'
         }
       ]
     }

@@ -8,30 +8,22 @@ export default {
       tabbars: [
         {
           title: '网站首页',
-          to: {
-            name: 'Home'
-          },
+          to: '/home',
           icon: 'home-o'
         },
         {
           title: '培训线路',
-          to: {
-            name: 'About'
-          },
+          to: '/peixunxianlu',
           icon: 'apps-o'
         },
         {
           title: '电话咨询',
-          to: {
-            name: 'About1'
-          },
+          to: '/dianhuazixun',
           icon: 'phone-o'
         },
         {
-          title: '返回顶部',
-          to: {
-            name: 'About2'
-          },
+          title: '联系我们',
+          to: '/lianxiwomen',
           icon: 'back-top'
         }
       ]
@@ -43,7 +35,7 @@ export default {
   },
   methods: {
     handleChange(v) {
-      console.log('tab value:', v)
+      console.log('您点击了:', v)
     }
   }
 }
