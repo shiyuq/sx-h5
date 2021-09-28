@@ -5,7 +5,7 @@
       <p>PRODUCT</p>
     </div>
     <div class="fangan">
-      <van-row type="flex" justify="space-between">
+      <!-- <van-row type="flex" justify="space-between">
         <van-col span="10">
           <img :src="require('./images/fangan1.jpg')"/>
         </van-col>
@@ -20,7 +20,7 @@
         <van-col span="10">
           <img :src="require('./images/fangan4.jpg')"/>
         </van-col>
-      </van-row>
+      </van-row> -->
       <!-- <van-grid clickable :colum-num="2">
         <van-grid-item text="方案1" to="/">
           <van-image :src="require('./images/fangan1.jpg')"></van-image>
@@ -37,6 +37,10 @@
           <van-image :src="require('./images/fangan4.jpg')"></van-image>
         </van-grid-item>
       </van-grid> -->
+      <div v-for="(route, index) in routes" :key="index" class="route-single">
+        <img :src="route.url" alt="" />
+        <span>{{ route.name }}</span>
+      </div>
     </div>
     <div class="more">查看更多线路>></div>
   </div>
