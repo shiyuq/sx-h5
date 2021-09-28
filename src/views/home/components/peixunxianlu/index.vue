@@ -37,9 +37,11 @@
           <van-image :src="require('./images/fangan4.jpg')"></van-image>
         </van-grid-item>
       </van-grid> -->
-      <div v-for="(route, index) in routes" :key="index" class="route-single">
-        <img :src="route.url" alt="" />
-        <span>{{ route.name }}</span>
+      <div v-for="(route, index) in routes" :key="index" class="route-container">
+        <div class="route-single">
+          <img :src="route.url" alt="" />
+          <span>{{ route.name }}</span>
+        </div>
       </div>
     </div>
     <div class="more">查看更多线路>></div>
