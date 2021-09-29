@@ -4,7 +4,7 @@
       <h2>四大保障<span>优选平台</span></h2>
       <p>FOUR GUARANTEES</p>
     </div>
-    <van-swipe @change="change" class="my-swipe" :loop="false" :show-indicators="false">
+    <van-swipe @change="change" ref="remarkCarusel" class="my-swipe" :loop="false" :show-indicators="false" :autoplay="3000">
        <van-swipe-item v-for="(item,index) in imgList" :key="index">
          <img :src="item.imgUrl" :alt="item.alt" />
          <div class="intro">

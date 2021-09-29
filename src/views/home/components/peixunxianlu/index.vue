@@ -12,7 +12,7 @@
         </div>
       </div>
     </div>
-    <div class="more">查看更多线路>></div>
+    <div class="more" >查看更多线路>></div>
   </div>
 </template>
 

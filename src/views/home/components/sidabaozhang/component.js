@@ -52,13 +52,15 @@ export default {
 
   computed: {},
 
-  mounted() {},
+  mounted() {
+    this.setIscur()
+  },
 
   methods: {
-    // setIscur(index) {
-    //   this.$refs.remarkCarusel.setActiveItem(index)
-    //   this.iscur = index
-    // },
+    setIscur(index) {
+      this.$refs.remarkCarusel.setActiveItem(index)
+      this.iscur = index
+    },
     change(index) {
       this.iscur = index
     },
