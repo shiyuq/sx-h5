@@ -1,0 +1,22 @@
+.home {
+  background-color: #fff;
+  padding: 10px;
+}
+.pic{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .rongyu-container {
+    width: 50%;
+    .rongyu-single {
+      box-shadow: 0 0 10px #ccc;
+      margin: 10px 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

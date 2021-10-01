@@ -69,33 +69,39 @@ export const constantRouterMap = [
         component: () => import('../views/rongyuzizhi'),
         meta: { title: '荣誉资质', keepAlive: false }
       },
-      // {
-      //   path: '/rongyuzizhixiangqing',
-      //   name: 'Rongyuzizhixiangqing',
-      //   component: () => import('../views/honorDetail'),
-      //   meta: { title: '荣誉资质详情', keepAlive: false }
-      // },
-      // {
-      //   path: '/xinwendongtai',
-      //   name: 'Xinwendongtai',
-      //   redirect: '/',
-      //   component: () => import('../views/newsEnter'),
-      //   children: [
-      //     {
-      //       path: '/',
-      //       redirect: '/',
-      //       name: 'NewsList',
-      //       component: () => import('../views/news'),
-      //       meta: { title: '新闻动态', keepAlive: false }
-      //     },
-      //     {
-      //       path: '/xinwendongtai/:id',
-      //       name: 'NewsDetail',
-      //       component: () => import('../views/newsDetail'),
-      //       meta: { title: '新闻动态详情', keepAlive: false }
-      //     }
-      //   ]
-      // },
+      {
+        path: '/rongyuzizhixiangqing',
+        name: 'Rongyuzizhixiangqing',
+        component: () => import('../views/rongyuzizhixiangqing'),
+        meta: { title: '荣誉资质详情', keepAlive: false }
+      },
+      {
+        path: '/xinwendongtai',
+        name: 'Xinwendongtai',
+        component: () => import('../views/xinwendongtai'),
+        meta: { title: '新闻动态', keepAlive: false }
+      },
+      {
+        path: '/xinwendongtai',
+        name: 'Xinwendongtai',
+        redirect: '/',
+        component: () => import('../views/xinwendongtai'),
+        children: [
+          {
+            path: '/',
+            redirect: '/',
+            name: 'NewsList',
+            component: () => import('../views/news'),
+            meta: { title: '新闻动态', keepAlive: false }
+          },
+          {
+            path: '/xinwendongtai/:id',
+            name: 'NewsDetail',
+            component: () => import('../views/newsDetail'),
+            meta: { title: '新闻动态详情', keepAlive: false }
+          }
+        ]
+      },
       {
         path: '/mingshifengcai',
         name: 'Mingshifengcai',
@@ -109,10 +115,28 @@ export const constantRouterMap = [
       //   meta: { title: '培训掠影1', keepAlive: false }
       // }
       {
-        path: '/xinwendongtai',
-        name: 'Xinwendongtai',
-        component: () => import('../views/xinwendongtai'),
-        meta: { title: '新闻动态', keepAlive: false }
+        path: '/qiyejianjie',
+        name: 'Qiyejieshao',
+        component: () => import('../views/companyProfile'),
+        meta: { title: '企业简介', keepAlive: false }
+      },
+      {
+        path: '/qiyewenhua',
+        name: 'Qiyewenhua',
+        component: () => import('../views/companyCulture'),
+        meta: { title: '企业文化', keepAlive: false }
+      },
+      {
+        path: '/peixunjidi',
+        name: 'Peixunjidi',
+        component: () => import('../views/productionBase'),
+        meta: { title: '培训基地', keepAlive: false }
+      },
+      {
+        path: '/rencaizhaopin',
+        name: 'Rencaizhaopin',
+        component: () => import('../views/talents'),
+        meta: { title: '人才招聘', keepAlive: false }
       }
     ]
   }

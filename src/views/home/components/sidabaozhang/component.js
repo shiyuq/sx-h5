@@ -52,9 +52,7 @@ export default {
 
   computed: {},
 
-  mounted() {
-    this.setIscur()
-  },
+  mounted() {},
 
   methods: {
     setIscur(index) {
