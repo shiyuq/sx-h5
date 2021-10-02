@@ -3,7 +3,7 @@ export default {
     return {
       routes: [
         {
-          name: '活动1',
+          name: '测试测试测试测试测试测试测试测试测试测试活动1',
           url: require('./images/fangan1.jpg')
         },
         {
@@ -11,7 +11,7 @@ export default {
           url: require('./images/fangan2.jpg')
         },
         {
-          name: '活动3',
+          name: '测试测试测试测试测试测试活动3',
           url: require('./images/fangan3.jpg')
         },
         {

@@ -1,20 +1,21 @@
 <!-- peixunxianlu -->
 <template>
   <div class="home-peixun">
-    <van-nav-bar  left-text="返回" @click-left="gotoMenu"  title="培训线路" left-arrow>
+    <van-nav-bar left-text="返回" @click-left="gotoMenu" title="培训线路" left-arrow>
       <template #right>
         <van-icon name="bars" size="18" />
       </template>
     </van-nav-bar>
-    <div class="fangan">
+    <div>
+      <van-list v-model="loading" :finished="finished" finished-text="没有更多了" @load="loadMore" class="fangan">
         <div v-for="(route, index) in routes" :key="index" class="route-container">
-        <div class="route-single">
-          <img :src="route.url" alt="" />
-          <span>{{ route.name }}</span>
+          <div class="route-single">
+            <img :src="route.trainPhotoUrl" alt="" />
+            <span>{{ route.title }}</span>
+          </div>
         </div>
-      </div>
+      </van-list>
     </div>
-    <van-pagination  class="paging" v-model="currentPage" :total-items="99" :show-page-size="5" force-ellipses/>
   </div>
 </template>
 
