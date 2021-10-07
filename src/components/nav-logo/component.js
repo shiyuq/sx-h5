@@ -46,6 +46,9 @@ export default {
       return this.$store.state.app.popup
     }
   },
+  watch: {
+    '$route': 'changeActive'
+  },
   methods: {
     showPopup() {
       this.$store.commit('app/setPopup', { value: true })
@@ -56,6 +59,18 @@ export default {
     selectTab(item, index) {
       this.$store.commit('app/setCurrentActiveTabIndex', index)
       this.$router.push({ path: item.router })
+    },
+    changeActive(val) {
+      if (val.path === '/') {
+        this.$store.commit('app/setCurrentActiveTabIndex', 0)
+      } else {
+        const index = this.navList.findIndex(item => val.path.indexOf(item.router) > -1)
+        if (index >= 0) {
+          this.$store.commit('app/setCurrentActiveTabIndex', index)
+        } else {
+          this.$store.commit('app/setCurrentActiveTabIndex', 0)
+        }
+      }
     }
   }
 }

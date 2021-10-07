@@ -33,8 +33,5 @@ export default {
   mounted() {},
 
   methods: {
-    changeTab(index) {
-      this.currentIndex = index
-    }
   }
 }
