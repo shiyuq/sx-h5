@@ -18,11 +18,15 @@ import {
   NavBar,
   Pagination,
   Search,
-  Tab, Tabs
+  Tab,
+  Tabs,
+  CellGroup,
+  Field,
+  Toast
 } from 'vant'
 
 Vue.use(Button)
-Vue.use(Cell)
+Vue.use(Cell).use(CellGroup)
 Vue.use(List)
 Vue.use(Icon)
 Vue.use(Sticky)
@@ -38,3 +42,5 @@ Vue.use(NavBar)
 Vue.use(Pagination)
 Vue.use(Search)
 Vue.use(Tab).use(Tabs)
+Vue.use(Field)
+Vue.use(Toast)

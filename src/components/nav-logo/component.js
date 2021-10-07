@@ -4,35 +4,35 @@ export default {
     return {
       navList: [
         {
-          router: 'home',
+          router: '/home',
           name: '网站首页'
         },
         {
-          router: 'peixunxianlu',
+          router: '/peixunxianlu',
           name: '培训线路'
         },
         {
-          router: 'peixunlueying',
+          router: '/peixunlueying',
           name: '培训掠影'
         },
         {
-          router: 'mingshifengcai',
+          router: '/mingshifengcai',
           name: '名师风采'
         },
         {
-          router: 'rongyuzizhi',
+          router: '/rongyuzizhi',
           name: '荣誉资质'
         },
         {
-          router: 'xinwendongtai',
+          router: '/xinwendongtai',
           name: '新闻动态'
         },
         {
-          router: 'guanyuwomen',
+          router: '/guanyuwomen',
           name: '关于我们'
         },
         {
-          router: 'lianxiwomen',
+          router: '/lianxiwomen',
           name: '联系我们'
         }
       ]

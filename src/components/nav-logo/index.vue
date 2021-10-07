@@ -17,12 +17,14 @@
       style="height: 100vh; background-color: #383735"
       @click="closePopup"
     >
-      <ul>
-        <li v-for="(item, index) in navList" :key="item.router">
-          <span v-if="index === currentActiveTabIndex" style="color: #a9050e">{{ item.name }}</span>
-          <span v-else style="color: #fff" @click="selectTab(item, index)">{{ item.name }}</span>
-        </li>
-      </ul>
+      <div class="nav-bar">
+        <div v-for="(item, index) in navList" :key="item.router" class="nav-item" @click="selectTab(item, index)">
+          <div class="nav-item-single">
+            <span v-if="index === currentActiveTabIndex" style="color: #a9050e">{{ item.name }}</span>
+            <span v-else style="color: #fff">{{ item.name }}</span>
+          </div>
+        </div>
+      </div>
     </van-popup>
   </div>
 </template>

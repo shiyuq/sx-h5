@@ -5,12 +5,7 @@
 export const constantRouterMap = [
   {
     path: '/',
-    component: () => import('@/views/layouts'),
-    redirect: '/',
-    meta: {
-      title: '首页',
-      keepAlive: false
-    },
+    component: () => import('../views/layouts'),
     children: [
       {
         path: '/',
@@ -27,23 +22,23 @@ export const constantRouterMap = [
       {
         path: '/peixunxianlu',
         name: 'Peixunxianlu',
-        // redirect: '/',
-        component: () => import('../views/peixunxianlu'),
-        meta: { title: '培训路线', keepAlive: false }
-        // children: [
-        //   {
-        //     path: '/',
-        //     name: 'TrainsList',
-        //     component: () => import('../views/route'),
-        //     meta: { title: '培训线路', keepAlive: false }
-        //   },
-        //   {
-        //     path: '/peixunxianlu/:id',
-        //     name: 'TrainsDetail',
-        //     component: () => import('../views/trainsDetail'),
-        //     meta: { title: '培训线路详情', keepAlive: false }
-        //   }
-        // ]
+        redirect: '/',
+        component: () => import('../views/trainsEnter'),
+        meta: { title: '培训路线', keepAlive: false },
+        children: [
+          {
+            path: '/',
+            name: 'TrainsList',
+            component: () => import('../views/peixunxianlu'),
+            meta: { title: '培训线路', keepAlive: false }
+          },
+          {
+            path: '/peixunxianlu/:id',
+            name: 'TrainsDetail',
+            component: () => import('../views/peixunxianluDetail'),
+            meta: { title: '培训线路详情', keepAlive: false }
+          }
+        ]
       },
       {
         path: '/peixunlueying',

@@ -1,0 +1,22 @@
+.content {
+  background-color: #fff;
+  height: 100%;
+  .title {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .photo {
+    margin: 10px;
+    img {
+      border-radius: 5px;
+      width: 100%;
+    }
+  }
+  .leave-contact {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+}

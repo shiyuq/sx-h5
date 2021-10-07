@@ -9,10 +9,12 @@
     <div>
       <van-list v-model="loading" :finished="finished" finished-text="没有更多了" @load="loadMore" class="fangan">
         <div v-for="(route, index) in routes" :key="index" class="route-container">
-          <div class="route-single">
-            <img :src="route.trainPhotoUrl" alt="" />
-            <span>{{ route.title }}</span>
-          </div>
+          <router-link :to="'/peixunxianlu/' + route.id" :title="route.title">
+            <div class="route-single">
+              <img :src="route.trainPhotoUrl" alt="" />
+              <span>{{ route.title }}</span>
+            </div>
+          </router-link>
         </div>
       </van-list>
     </div>
