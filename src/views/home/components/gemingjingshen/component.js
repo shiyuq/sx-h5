@@ -57,17 +57,11 @@ export default {
 
   methods: {
     setIscur(index) {
-      this.$refs.remarkCarusel.setActiveItem(index)
+      this.$refs.swipe.swipeTo(index)
       this.iscur = index
     },
     change(index) {
       this.iscur = index
-    },
-    setAutoplay() {
-      this.autoplay = false
-    },
-    changeAutoplay() {
-      this.autoplay = true
     }
   }
 }
