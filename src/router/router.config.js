@@ -47,6 +47,12 @@ export const constantRouterMap = [
         meta: { title: '培训掠影', keepAlive: false }
       },
       {
+        path: '/peixunlueying1',
+        name: 'Peixunlueying1',
+        component: () => import('../views/peixunlueying1'),
+        meta: { title: '培训掠影1', keepAlive: false }
+      },
+      {
         path: '/guanyuwomen',
         name: 'Guanyuwomen',
         component: () => import('../views/guanyuwomen'),
@@ -103,12 +109,7 @@ export const constantRouterMap = [
         component: () => import('../views/mingshifengcai'),
         meta: { title: '名师风采', keepAlive: false }
       },
-      // {
-      //   path: '/peixunlueying1',
-      //   name: 'Peixunlueying1',
-      //   component: () => import('../views/mingshidetail'),
-      //   meta: { title: '培训掠影1', keepAlive: false }
-      // }
+      
       {
         path: '/qiyejianjie',
         name: 'Qiyejieshao',

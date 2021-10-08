@@ -3,20 +3,28 @@ export default {
     return {
       rongyu: [
         {
-          name: '荣誉1',
-          url: require('./images/1.jpg')
+          id: '01',
+          title: '荣誉1',
+          url: require('./images/1.jpg'),
+          src: '/rongyuzizhixiangqing'
         },
         {
-          name: '荣誉2',
-          url: require('./images/1.jpg')
+          id: '02',
+          title: '荣誉2',
+          url: require('./images/1.jpg'),
+          src: '/rongyuzizhixiangqing'
         },
         {
-          name: '荣誉3',
-          url: require('./images/1.jpg')
+          id: '03',
+          title: '荣誉3',
+          url: require('./images/1.jpg'),
+          src: '/rongyuzizhixiangqing'
         },
         {
-          name: '荣誉4',
-          url: require('./images/1.jpg')
+          id: '04',
+          title: '荣誉4',
+          url: require('./images/1.jpg'),
+          src: '/rongyuzizhixiangqing'
         }
       ]
     }

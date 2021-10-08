@@ -8,10 +8,12 @@
     </van-nav-bar>
     <div class="pic">
        <div v-for="(lueying, index) in lueying" :key="index" class="lueying-container">
+        <router-link :to="lueying.src" :title="lueying.name">
         <div class="lueying-single">
           <img :src="lueying.url" alt="" />
           <span>{{ lueying.name }}</span>
         </div>
+        </router-link>
       </div>
     </div>
     <van-pagination  class="paging" v-model="currentPage" :total-items="99" :show-page-size="5" force-ellipses/>
