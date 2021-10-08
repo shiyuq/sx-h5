@@ -73,18 +73,11 @@ export const constantRouterMap = [
       {
         path: '/xinwendongtai',
         name: 'Xinwendongtai',
-        component: () => import('../views/xinwendongtai'),
-        meta: { title: '新闻动态', keepAlive: false }
-      },
-      {
-        path: '/xinwendongtai',
-        name: 'Xinwendongtai',
         redirect: '/',
-        component: () => import('../views/xinwendongtai'),
+        component: () => import('../views/newsEnter'),
         children: [
           {
             path: '/',
-            redirect: '/',
             name: 'NewsList',
             component: () => import('../views/news'),
             meta: { title: '新闻动态', keepAlive: false }
