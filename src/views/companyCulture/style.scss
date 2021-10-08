@@ -1,38 +1,19 @@
-.home-lianxiwomen {
+.home-qiyewenhua {
   background: #fff;
-  margin:10px;
+  margin: 10px;
   text-align: center;
-  .lianxi{
-    display:flex;
-    margin: 15px;
-    justify-content: center;
-    font-size: 15px;
-    color:#555;
-    .icon{
-      width: 15px;
+  .content {
+    margin: 0 5px;
+    img {
+      margin: 5px;
+      width: 90%;
     }
-  }
-  .navigation{
-    align-items: center;
-    text-align: center;
-    img{
-      width:90%;
-      margin: 10px;
-    }
-    span{
-      font-size: 15px;
-      color:#555;
-    }
-    a {
-      text-decoration: none;
-      img {
-        border: 0;
-        width: 400px;
-        height: 425px;
-      }
-    }
-    a:hover {
-      text-decoration: underline;
+    .zhengwen {
+      text-indent: 2em;
+      font-size: 14px;
+      color: #555;
+      text-align: justify;
+      margin: 0 20px 10px 20px;
     }
   }
 }
