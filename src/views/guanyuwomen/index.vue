@@ -1,7 +1,8 @@
 <!-- guanyuwomen -->
 <template>
   <div class="home-guanyuwomen">
-    <ul class="menu">
+    <van-nav-bar left-text="返回" @click-left="gotoMenu" title="关于我们" left-arrow/>
+     <ul class="menu">
       <li
         v-for="(item, index) in titleList"
         :key="index"
@@ -11,7 +12,6 @@
         {{ item.title }}
       </li>
     </ul>
-    <van-nav-bar left-text="返回" @click-left="gotoMenu" title="关于我们" left-arrow/>
     <div class="content">
       <img :src="require('./images/1.jpg')" />
       <div class="zhengwen">

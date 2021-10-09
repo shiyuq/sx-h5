@@ -19,7 +19,7 @@ export default {
           title: '企业风采',
           src: '/companyProfile'
         }
-      ],
+      ]
     }
   },
   mounted() {
