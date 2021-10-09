@@ -109,7 +109,6 @@ export const constantRouterMap = [
         component: () => import('../views/mingshifengcai'),
         meta: { title: '名师风采', keepAlive: false }
       },
-      
       {
         path: '/qiyejianjie',
         name: 'Qiyejieshao',
