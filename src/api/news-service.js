@@ -8,6 +8,12 @@ const getNewsList = async(params) => {
   return data
 }
 
+const getNewsDetail = async(params) => {
+  const { data } = await createInstance(baseUrl).post('/news/detail', params)
+  return data
+}
+
 export default {
-  getNewsList
+  getNewsList,
+  getNewsDetail
 }
