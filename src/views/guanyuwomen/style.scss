@@ -1,7 +1,40 @@
 .home-guanyuwomen{
   background:#fff;
-  margin:0 10px;
+  margin:10px 0;
   text-align: center;
+  .menu {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    li {
+      display: inline-block;
+      // margin: 10px 6px;
+      width: 33.3%;
+      height: 30px;
+      // background-color: rgba(247, 240, 240, 0.5);
+      text-align: center;
+      line-height: 30px;
+      font-size: 16px;
+      position: relative;
+      color: #be0008;
+      font-weight: 700;
+      cursor: pointer;
+      img {
+        display: none;
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+      }
+    }
+    .cur {
+      background-color: #be0008;
+      border-color: #be0008;
+      color: #fff;
+      img {
+        display: block;
+      }
+    }
+  }
   .content{
     margin:0 5px;
     img{
@@ -14,8 +47,6 @@
       color:#555;
       text-align:justify;
       margin: 0 20px 10px 20px;
-      // width:;
-      // height:;
     }
   }
 }

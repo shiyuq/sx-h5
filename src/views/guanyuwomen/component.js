@@ -3,7 +3,23 @@ import { Toast } from 'vant'
 export default {
   data() {
     return {
-      value: ''
+      value: '',
+      iscur: 0,
+      autoplay: true,
+      titleList: [
+        {
+          title: '企业简介',
+          src: '/guanyuwomen'
+        },
+        {
+          title: '企业文化',
+          src: '/companyCulture'
+        },
+        {
+          title: '企业风采',
+          src: '/companyProfile'
+        }
+      ],
     }
   },
   mounted() {
@@ -17,7 +33,13 @@ export default {
     },
     gotoMenu() {
       this.$router.go(-1)
-      // this.$router.go('/home')
+    },
+    setIscur(index) {
+      this.$refs.swipe.swipeTo(index)
+      this.iscur = index
+    },
+    change(index) {
+      this.iscur = index
     }
   }
 }

@@ -1,11 +1,17 @@
 <!-- guanyuwomen -->
 <template>
   <div class="home-guanyuwomen">
-    <van-nav-bar left-text="返回" @click-left="gotoMenu" title="关于我们" left-arrow>
-      <template #right>
-        <van-icon name="bars" size="18" />
-      </template>
-    </van-nav-bar>
+    <ul class="menu">
+      <li
+        v-for="(item, index) in titleList"
+        :key="index"
+        :class="{ cur: iscur === index }"
+        @mouseover="setIscur(index)"
+      >
+        {{ item.title }}
+      </li>
+    </ul>
+    <van-nav-bar left-text="返回" @click-left="gotoMenu" title="关于我们" left-arrow/>
     <div class="content">
       <img :src="require('./images/1.jpg')" />
       <div class="zhengwen">
