@@ -1,11 +1,7 @@
 <!-- peixunxianlu -->
 <template>
   <div class="home-peixun">
-    <van-nav-bar left-text="返回" @click-left="gotoMenu" title="培训线路" left-arrow>
-      <template #right>
-        <van-icon name="bars" size="18" />
-      </template>
-    </van-nav-bar>
+    <van-nav-bar left-text="返回" @click-left="gotoMenu" title="培训线路" left-arrow/>
     <div>
       <van-list v-model="loading" :finished="finished" finished-text="没有更多了" @load="loadMore" class="fangan">
         <div v-for="(route, index) in routes" :key="index" class="route-container">
