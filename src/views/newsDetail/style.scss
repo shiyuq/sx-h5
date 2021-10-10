@@ -1,0 +1,17 @@
+.home-xinwen {
+  background-color: #fff;
+  padding: 10px 0;
+  .content {
+    width: 100%;
+    text-align: justify;
+    h4 {
+      text-align: center;
+      margin: 10px auto;
+      color: #fe0139;
+    }
+    .editor-content {
+      padding: 0 10px;
+      line-height: 1.5;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.home-qiyewenhua {
+  background: #fff;
+  margin: 10px;
+  text-align: center;
+  .content {
+    margin: 0 5px;
+    img {
+      margin: 5px;
+      width: 90%;
+    }
+    .zhengwen {
+      text-indent: 2em;
+      font-size: 14px;
+      color: #555;
+      text-align: justify;
+      margin: 0 20px 10px 20px;
+    }
+  }
+}

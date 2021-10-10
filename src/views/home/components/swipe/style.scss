@@ -1,0 +1,27 @@
+.my-swipe .van-swipe-item {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  img {
+    width: 100%;
+  }
+}
+
+.indicator {
+  margin: 10px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    display: inline-block;
+    width: 5em;
+    height: 3px;
+    background-color: #cfcfcf;
+    margin: 0 4px;
+    margin-top: 2px;
+    text-indent: -99999em;
+  }
+  .on {
+    background-color: #f00e2a;
+  }
+}

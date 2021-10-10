@@ -1,0 +1,56 @@
+.home {
+  background-color: #fff;
+  padding: 20px;
+  .title{
+    text-align: center;
+  }
+
+  .van-tabs{
+    // color:#fd581f;
+    // background-color:#fd581f;
+    margin: 10px;
+    .van-tabs__nav--card {
+      box-sizing: border-box;
+      height: 0.8rem;
+      /* margin: 0 0.42667rem; */
+      border: 0.02667rem solid #ee0a24;
+      border-radius: 0.05333rem
+    }
+    .van-tab{
+      width:355px;
+      height:200px;
+      background:#333;
+      
+    }
+    .news{
+      height: 200px;
+      width: 91%;
+      background:#fff;
+      margin: 2px 15px;
+    }
+    .action{
+      height: 200px;
+      width: 91%;
+      background:#fff;
+      margin: 2px 15px;
+      display:flex;
+      img{
+        width:124px ;
+        height: 69px;
+        margin: 25px 30px;
+      }
+      .detail{
+        width: 50%;
+        h5{
+          font-size: 15px;
+          padding: 25px 0 10px 0;
+        }
+        p{
+          font-size: 14px;
+          color:#555;
+        }
+      }
+    }
+  }
+  
+}

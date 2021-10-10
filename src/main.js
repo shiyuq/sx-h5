@@ -20,7 +20,7 @@ import '@/assets/css/index.scss'
 import 'lib-flexible/flexible.js'
 
 // filters
-import './filters'
+// import './filters'
 Vue.config.productionTip = false
 
 new Vue({

@@ -4,35 +4,35 @@ export default {
     return {
       navList: [
         {
-          router: 'home',
+          router: '/home',
           name: '网站首页'
         },
         {
-          router: 'peixunxianlu',
+          router: '/peixunxianlu',
           name: '培训线路'
         },
         {
-          router: 'peixunlueying',
+          router: '/peixunlueying',
           name: '培训掠影'
         },
         {
-          router: 'mingshifengcai',
+          router: '/mingshifengcai',
           name: '名师风采'
         },
         {
-          router: 'rongyuzizhi',
+          router: '/rongyuzizhi',
           name: '荣誉资质'
         },
         {
-          router: 'xinwendongtai',
+          router: '/xinwendongtai',
           name: '新闻动态'
         },
         {
-          router: 'guanyuwomen',
+          router: '/guanyuwomen',
           name: '关于我们'
         },
         {
-          router: 'lianxiwomen',
+          router: '/lianxiwomen',
           name: '联系我们'
         }
       ]
@@ -46,6 +46,9 @@ export default {
       return this.$store.state.app.popup
     }
   },
+  watch: {
+    '$route': 'changeActive'
+  },
   methods: {
     showPopup() {
       this.$store.commit('app/setPopup', { value: true })
@@ -56,6 +59,18 @@ export default {
     selectTab(item, index) {
       this.$store.commit('app/setCurrentActiveTabIndex', index)
       this.$router.push({ path: item.router })
+    },
+    changeActive(val) {
+      if (val.path === '/') {
+        this.$store.commit('app/setCurrentActiveTabIndex', 0)
+      } else {
+        const index = this.navList.findIndex(item => val.path.indexOf(item.router) > -1)
+        if (index >= 0) {
+          this.$store.commit('app/setCurrentActiveTabIndex', index)
+        } else {
+          this.$store.commit('app/setCurrentActiveTabIndex', 0)
+        }
+      }
     }
   }
 }

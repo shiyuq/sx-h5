@@ -1,6 +1,12 @@
 <template>
-  <div>
-
+  <div class="home">
+    <Swipe />
+    <Peixunxianlu />
+    <Sidabaozhang />
+    <About />
+    <Gemingjingshen />
+    <Dianhuazixun />
+    <Gongsixinwen />
   </div>
 </template>
 
