@@ -1,37 +1,31 @@
 .home-about {
   background-color: #fff;
-  padding: 10px 0;
   text-align: center;
   .title {
-    margin-top: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    width: 100%;
     p {
       color: #818181;
       font-size: 0.4rem;
     }
-  }
-
-  .divider {
-    color: #888;
-    border: green;
     .redline {
+      margin-top: 10px;
       width: 20%;
-      border: solid 1px #f00e2a;
+      border: solid 1px #be0007;
       background-color: #f00e2a;
     }
   }
 
   img {
-    margin: 0 auto;
-    width: 97%;
-    height:auto;
-    border: solid 5px #ccc;
+    width: 100%;
+    height: auto;
   }
   .intro {
     padding: 0 10px;
-    margin: 10px;
     h5 {
       font-size: 18px;
       color: #333;

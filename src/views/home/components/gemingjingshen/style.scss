@@ -1,16 +1,15 @@
 .home {
-  background-color: #fff;
-  .intro{
-    padding:0 10px;
-    h5{
+  .intro {
+    padding: 0 10px;
+    h5 {
       font-size: 18px;
-      color:#333;
+      color: #333;
       text-align: center;
       padding: 10px 0;
     }
-    p{
+    p {
       font-size: 14px;
-      color:#555;
+      color: #555;
       text-align: justify;
     }
   }
@@ -20,54 +19,52 @@
   flex-direction: column;
   align-items: center;
   background-color: #f2f2f2;
-  margin: 10px auto;
   padding: 40px 0;
   width: 100%;
-  h2{
+  h2 {
     color: #be0007;
     font-size: 0.67rem;
   }
   span {
     font-size: 0.53rem;
-    color:#333;
-    align-items:center;
+    color: #333;
+    align-items: center;
     font-weight: normal;
   }
   p {
     color: #818181;
     font-size: 0.4rem;
-  } 
-  .redline{
+  }
+  .redline {
     margin-top: 10px;
-    width:20%;
-    border:solid 1px #be0007;
+    width: 20%;
+    border: solid 1px #be0007;
     background-color: #f00e2a;
   }
 }
-.my-swipe{
+.my-swipe {
   // background: './images/3.jpg'; 问题
   .van-swipe-item {
-    width:100%;
+    width: 100%;
     color: #fff;
     font-size: 20px;
     text-align: center;
     img {
-      width: 97%;
+      width: 100%;
       height: auto;
-      border:solid 5px #ccc;
     }
-    .intro{
+    .intro {
       margin: 10px;
-      h5{
+      h5 {
         margin: 5px 0;
         font-size: 17px;
         text-align: center;
-        color:#333;
+        color: #333;
       }
-      p{
+      p {
         font-size: 15px;
         text-align: justify;
-        color:#555;
+        color: #555;
       }
     }
   }

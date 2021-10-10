@@ -34,8 +34,6 @@ export default {
     NavLogo
   },
   methods: {
-    handleChange(v) {
-      console.log('您点击了:', v)
-    }
+    handleChange(v) {}
   }
 }
