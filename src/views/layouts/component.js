@@ -17,9 +17,9 @@ export default {
           icon: 'apps-o'
         },
         {
-          title: '电话咨询',
-          to: '/dianhuazixun',
-          icon: 'phone-o'
+          title: '关于我们',
+          to: '/guanyuwomen',
+          icon: 'contact'
         },
         {
           title: '联系我们',

@@ -32,8 +32,43 @@
           ></van-search>
         </form>
       </van-tab>
-      <van-tab title="企业文化" name="2">企业文化</van-tab>
-      <van-tab title="企业风采" name="3">企业风采</van-tab>
+      <van-tab title="企业文化" name="2">
+        <div class="content2">
+          <img :src="require('./images/1.jpg')" />
+          <div class="zhengwen2">不忘初心</div>
+          <div class="zhengwen2">牢记使命</div>
+          <div class="zhengwen2">传承红色基因</div>
+          <div class="zhengwen2">弘扬三五九旅精神</div>
+        </div>
+        <form action="/">
+          <van-search
+            v-model="value"
+            show-action
+            placeholder="请输入搜索关键词"
+            @search="onSearch"
+            @cancel="onCancel"
+          ></van-search>
+        </form>
+      </van-tab>
+      <van-tab title="企业风采" name="3">
+        <div class="fangan">
+          <div v-for="(route, index) in routes" :key="index" class="route-container">
+            <div class="route-single">
+              <img :src="route.url" alt="" />
+              <span>{{ route.name }}</span>
+            </div>
+          </div>
+        </div>
+        <form action="/">
+          <van-search
+            v-model="value"
+            show-action
+            placeholder="请输入搜索关键词"
+            @search="onSearch"
+            @cancel="onCancel"
+          ></van-search>
+        </form>
+      </van-tab>
     </van-tabs>
   </div>
 </template>
