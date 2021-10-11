@@ -7,13 +7,14 @@
       </template>
     </van-nav-bar>
     <div class="content">
-      <img :src="require('./images/1.jpg')" />
+      <!-- 只有在 css 里面 才会用到 require，因为用不了相对路径 ./  -->
+      <img src="./images/1.jpg" />
       <div class="zhengwen">不忘初心</div>
       <div class="zhengwen">牢记使命</div>
       <div class="zhengwen">传承红色基因</div>
       <div class="zhengwen">弘扬三五九旅精神</div>
     </div>
-    <form action="/">
+    <!-- <form action="/">
       <van-search
         v-model="value"
         show-action
@@ -21,7 +22,7 @@
         @search="onSearch"
         @cancel="onCancel"
       ></van-search>
-    </form>
+    </form> -->
   </div>
 </template>
 
