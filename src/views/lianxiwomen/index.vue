@@ -1,11 +1,7 @@
 <!-- home -->
 <template>
   <div class="home-lianxiwomen">
-    <van-nav-bar left-text="返回" @click-left="gotoMenu" title="联系我们" left-arrow>
-      <template #right>
-        <van-icon name="bars" size="18" />
-      </template>
-    </van-nav-bar>
+    <van-nav-bar left-text="返回" @click-left="gotoMenu" title="联系我们" left-arrow />
     <div class="lianxi">
       <img class="icon" :src="require('./images/address.png')" />
       地址：新疆阿拉尔市秋收大道1001号

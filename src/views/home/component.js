@@ -1,9 +1,11 @@
+//  这里的首页  所有的 每个模块风格记得统一一下
+
 import Swipe from './components/swipe'
 import Peixunxianlu from './components/peixunxianlu'
 import Sidabaozhang from './components/sidabaozhang'
 import About from './components/about'
 import Gemingjingshen from './components/gemingjingshen'
-import Dianhuazixun from '../dianhuazixun'
+import Dianhuazixun from './components/dianhuazixun'
 import Gongsixinwen from './components/gongsixinwen'
 
 export default {
