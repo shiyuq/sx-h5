@@ -1,23 +1,26 @@
-.home-guanyuwomen{
-  background:#fff;
-  margin:10px 0;
+.home-guanyuwomen {
+  background: #fff;
+  margin: 0;
   text-align: center;
-  .content{
-    margin:0 5px;
-    img{
+  .content {
+    margin: 0 5px;
+    img {
       margin: 5px;
-      width:90%;
+      width: 90%;
     }
-    .zhengwen{
-      text-indent:2em;
+    .zhengwen {
+      text-indent: 2em;
       font-size: 14px;
-      color:#555;
-      text-align:justify;
-      margin: 0 20px 10px 20px;
+      color: #555;
+      text-align: justify;
+      margin: 0 20px;
+      padding: 5px 0;
     }
   }
-  .content2{
+  .content2 {
     margin: 0 5px;
+    height: 1000px;
+    background-color: #fff;
     img {
       margin: 5px;
       width: 90%;
@@ -27,7 +30,8 @@
       font-size: 14px;
       color: #555;
       text-align: center;
-      margin: 0 20px 10px 20px;
+      margin: 0 20px;
+      padding: 5px 0;
     }
   }
   .fangan {
@@ -67,7 +71,7 @@
 }
 
 .fangan ::v-deep .van-list__finished-text {
-// .fangan /deep/ .van-list__finished-text {
+  // .fangan /deep/ .van-list__finished-text {
   display: flex;
   justify-content: center;
   width: 100%;

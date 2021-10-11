@@ -4,7 +4,7 @@
     <van-nav-bar left-text="返回" @click-left="gotoMenu" title="培训掠影详情" left-arrow> </van-nav-bar>
     <div class="content">
       <div class="title">培训掠影1</div>
-      <img :src="require('./images/3.jpg')" />
+      <img src="./images/3.jpg" />
     </div>
     <div class="zixun">相关资讯</div>
     <div class="tuijian">推荐线路</div>

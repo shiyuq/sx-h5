@@ -3,8 +3,9 @@
     <div class="title">
       <h2>电话咨询</h2>
       <p>CONTACT US</p>
+      <div class="redline"></div>
     </div>
-    <a href="tel:<18018027271>"><van-image fit="contain" :src="require('./images/call.jpg')"/></a>
+    <a href="tel:<18018027271>"><van-image fit="contain" :src="require('./images/call.jpg')" /></a>
   </div>
 </template>
 

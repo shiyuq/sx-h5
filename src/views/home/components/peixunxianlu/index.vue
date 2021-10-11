@@ -3,6 +3,7 @@
     <div class="title">
       <h2>培训线路</h2>
       <p>PRODUCT</p>
+      <div class="redline"></div>
     </div>
     <div class="fangan">
       <div v-for="(route, index) in routes" :key="index" class="route-container">
