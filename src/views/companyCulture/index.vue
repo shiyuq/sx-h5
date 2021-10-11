@@ -14,7 +14,7 @@
       <div class="zhengwen">传承红色基因</div>
       <div class="zhengwen">弘扬三五九旅精神</div>
     </div>
-    <form action="/">
+    <!-- <form action="/">
       <van-search
         v-model="value"
         show-action
@@ -22,7 +22,7 @@
         @search="onSearch"
         @cancel="onCancel"
       ></van-search>
-    </form>
+    </form> -->
   </div>
 </template>
 

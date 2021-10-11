@@ -1,7 +1,7 @@
 <!-- guanyuwomen -->
 <template>
   <div class="home-guanyuwomen">
-    <van-nav-bar left-text="返回" @click-left="gotoMenu" title="关于我们" left-arrow/>
+    <van-nav-bar left-text="返回" @click-left="gotoMenu" title="关于我们" left-arrow />
     <van-tabs v-model="active">
       <van-tab title="企业简介" name="1">
         <div class="content">
@@ -22,7 +22,7 @@
             这里是三五九旅传承地。1949年11月，由王震率领的其所属中国人民解放军第一野战军第一兵团第二军步兵五师（前359旅）进驻阿克苏，1953年6月，步兵五师奉命改编为中国人民解放军新疆军区农业建设第一师，次年，归属新疆军区生产建设兵团。“生在井冈山、长在南泥湾、转战数万里、屯垦在天山”是这支光荣劲旅从革命战争到维稳戍边的辉煌写照。
           </div>
         </div>
-        <form action="/">
+        <!-- <form action="/">
           <van-search
             v-model="value"
             show-action
@@ -30,17 +30,17 @@
             @search="onSearch"
             @cancel="onCancel"
           ></van-search>
-        </form>
+        </form> -->
       </van-tab>
       <van-tab title="企业文化" name="2">
         <div class="content2">
-          <img :src="require('./images/1.jpg')" />
+          <img src="./images/1.jpg" />
           <div class="zhengwen2">不忘初心</div>
           <div class="zhengwen2">牢记使命</div>
           <div class="zhengwen2">传承红色基因</div>
           <div class="zhengwen2">弘扬三五九旅精神</div>
         </div>
-        <form action="/">
+        <!-- <form action="/">
           <van-search
             v-model="value"
             show-action
@@ -48,7 +48,7 @@
             @search="onSearch"
             @cancel="onCancel"
           ></van-search>
-        </form>
+        </form> -->
       </van-tab>
       <van-tab title="企业风采" name="3">
         <div class="fangan">
@@ -59,7 +59,7 @@
             </div>
           </div>
         </div>
-        <form action="/">
+        <!-- <form action="/">
           <van-search
             v-model="value"
             show-action
@@ -67,7 +67,7 @@
             @search="onSearch"
             @cancel="onCancel"
           ></van-search>
-        </form>
+        </form> -->
       </van-tab>
     </van-tabs>
   </div>

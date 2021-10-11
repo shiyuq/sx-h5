@@ -8,7 +8,7 @@
     </div>
     <div class="zixun">相关资讯</div>
     <div class="tuijian">推荐线路</div>
-    ·<van-pagination v-model="currentPage" :page-count="4" mode="simple" />
+    <!-- ·<van-pagination v-model="currentPage" :page-count="4" mode="simple" /> -->
   </div>
 </template>
 

@@ -50,5 +50,8 @@
   background-color: #f3f3f3;
   border-radius: 5px;
   color: #222;
-  font-size: 0.3rem;
+  font-size: 12px;
+  a {
+    color: $a-color;
+  }
 }
