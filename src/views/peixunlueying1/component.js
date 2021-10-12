@@ -18,13 +18,19 @@ export default {
   },
   mounted() {
   },
+  watch: {
+    cameras: {
+      handler() {
+        this.getIdIndex()
+      }
+    }
+  },
   created() {
     this.getIdIndex()
   },
   methods: {
     gotoMenu() {
       this.$router.go(-1)
-      // this.$router.go('/home')
     },
     getIdIndex() {
       if (this.cameras) {

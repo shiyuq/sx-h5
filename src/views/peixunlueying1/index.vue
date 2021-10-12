@@ -2,7 +2,7 @@
 <template>
   <div class="home">
     <van-nav-bar left-text="返回" @click-left="gotoMenu" title="培训掠影详情" left-arrow> </van-nav-bar>
-    <div class="contentLeft">
+    <div class="contentLeft" v-if="cameras">
       <div class="box">
         <h1>培训掠影</h1>
         <div class="title">
