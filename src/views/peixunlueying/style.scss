@@ -1,31 +1,31 @@
-.home {
+.home-lueying {
   background-color: #fff;
-  padding: 10px;
-}
-.photo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  .lueying-container {
-    width: 50%;
-    .lueying-single {
-      box-shadow: rgba(0, 0, 0, 0.2) 0 1px 5px 0px;
-      border-radius: 5px;
-      margin: 10px 5px;
-      display: flex;
-      flex-direction: column;
-      img {
-        width: 100%;
-        border-radius: 5px 5px 0 0;
-      }
-      span {
-        height: 35px;
+  padding: 0 5px;
+  .photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .lueying-container {
+      width: 50%;
+      .lueying-single {
+        box-shadow: rgba(0, 0, 0, 0.2) 0 1px 5px 0px;
+        border-radius: 5px;
         margin: 10px 5px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 100%;
+          border-radius: 5px 5px 0 0;
+        }
+        span {
+          height: 35px;
+          margin: 10px 5px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
       }
     }
   }

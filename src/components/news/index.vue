@@ -1,10 +1,8 @@
 <template>
   <div>
-    <van-tabbar fixed v-model="active" @change="handleChange" active-color="#ee0a24">
-      <van-tabbar-item v-for="(item, index) in data" :to="item.to" :icon="item.icon" :key="index">
-        {{ item.title }}
-      </van-tabbar-item>
-    </van-tabbar>
+    <div class="home">
+      <h6>相关资讯</h6>
+    </div>
   </div>
 </template>
 

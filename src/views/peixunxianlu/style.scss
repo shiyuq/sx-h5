@@ -1,6 +1,6 @@
 .home-peixun {
   background-color: #fff;
-  padding: 10px;
+  padding: 0 5px;
 }
 .fangan {
   display: flex;
@@ -49,7 +49,7 @@
 }
 
 .fangan ::v-deep .van-list__finished-text {
-// .fangan /deep/ .van-list__finished-text {
+  // .fangan /deep/ .van-list__finished-text {
   display: flex;
   justify-content: center;
   width: 100%;

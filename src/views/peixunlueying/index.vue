@@ -1,6 +1,6 @@
 <!-- peixunlueying -->
 <template>
-  <div class="home">
+  <div class="home-lueying">
     <van-nav-bar left-text="返回" @click-left="gotoMenu" title="培训掠影" left-arrow />
     <div>
       <van-list finished-text="没有更多了" @load="loadMore" class="photo">
