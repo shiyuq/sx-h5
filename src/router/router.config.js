@@ -40,17 +40,37 @@ export const constantRouterMap = [
           }
         ]
       },
+      // {
+      //   path: '/peixunlueying',
+      //   name: 'Peixunlueying',
+      //   component: () => import('../views/peixunlueying'),
+      //   meta: { title: '培训掠影', keepAlive: false }
+      // },
+      // {
+      //   path: '/peixunlueying1',
+      //   name: 'Peixunlueying1',
+      //   component: () => import('../views/peixunlueying1'),
+      //   meta: { title: '培训掠影1', keepAlive: false }
+      // },
       {
         path: '/peixunlueying',
         name: 'Peixunlueying',
-        component: () => import('../views/peixunlueying'),
-        meta: { title: '培训掠影', keepAlive: false }
-      },
-      {
-        path: '/peixunlueying1',
-        name: 'Peixunlueying1',
-        component: () => import('../views/peixunlueying1'),
-        meta: { title: '培训掠影1', keepAlive: false }
+        redirect: '/',
+        component: () => import('../views/photoEnter'),
+        children: [
+          {
+            path: '/',
+            name: 'CameraList',
+            component: () => import('../views/peixunlueying'),
+            meta: { title: '培训掠影', keepAlive: false }
+          },
+          {
+            path: '/peixunlueying/:id',
+            name: 'CameraDetail',
+            component: () => import('../views/peixunlueying1'),
+            meta: { title: '培训掠影详情', keepAlive: false }
+          }
+        ]
       },
       {
         path: '/guanyuwomen',
