@@ -21,20 +21,5 @@ export default {
     '$route': 'changeActive'
   },
   methods: {
-    handleChange(value) {
-      this.$emit('change', value)
-    },
-    changeActive(val) {
-      if (val.path === '/') {
-        this.active = 0
-      } else {
-        const index = this.data.findIndex(item => val.path.indexOf(item.to) > -1)
-        if (index >= 0) {
-          this.active = index
-        } else {
-          this.active = 0
-        }
-      }
-    }
   }
 }

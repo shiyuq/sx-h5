@@ -40,18 +40,6 @@ export const constantRouterMap = [
           }
         ]
       },
-      // {
-      //   path: '/peixunlueying',
-      //   name: 'Peixunlueying',
-      //   component: () => import('../views/peixunlueying'),
-      //   meta: { title: '培训掠影', keepAlive: false }
-      // },
-      // {
-      //   path: '/peixunlueying1',
-      //   name: 'Peixunlueying1',
-      //   component: () => import('../views/peixunlueying1'),
-      //   meta: { title: '培训掠影1', keepAlive: false }
-      // },
       {
         path: '/peixunlueying',
         name: 'Peixunlueying',
@@ -87,14 +75,22 @@ export const constantRouterMap = [
       {
         path: '/rongyuzizhi',
         name: 'Rongyuzizhi',
-        component: () => import('../views/rongyuzizhi'),
-        meta: { title: '荣誉资质', keepAlive: false }
-      },
-      {
-        path: '/rongyuzizhixiangqing',
-        name: 'Rongyuzizhixiangqing',
-        component: () => import('../views/rongyuzizhixiangqing'),
-        meta: { title: '荣誉资质详情', keepAlive: false }
+        redirect: '/',
+        component: () => import('../views/rongyuzizhiEnter'),
+        children: [
+          {
+            path: '/',
+            name: 'rongyuzizhiList',
+            component: () => import('../views/rongyuzizhi'),
+            meta: { title: '荣誉资质', keepAlive: false }
+          },
+          {
+            path: '/rongyuzizhi/:id',
+            name: 'rongyuzizhiDetail',
+            component: () => import('../views/rongyuzizhiDetail'),
+            meta: { title: '荣誉资质详情', keepAlive: false }
+          }
+        ]
       },
       {
         path: '/xinwendongtai',
@@ -119,8 +115,22 @@ export const constantRouterMap = [
       {
         path: '/mingshifengcai',
         name: 'Mingshifengcai',
-        component: () => import('../views/mingshifengcai'),
-        meta: { title: '名师风采', keepAlive: false }
+        redirect: '/',
+        component: () => import('../views/mingshifengcaiEnter'),
+        children: [
+          {
+            path: '/',
+            name: 'mingshifengcaiList',
+            component: () => import('../views/mingshifengcai'),
+            meta: { title: '名师风采', keepAlive: false }
+          },
+          {
+            path: '/mingshifengcai/:id',
+            name: 'mingshifengcaiDetail',
+            component: () => import('../views/mingshifengcaiDetail'),
+            meta: { title: '名师风采详情', keepAlive: false }
+          }
+        ]
       },
       {
         path: '/qiyejianjie',
