@@ -16,10 +16,17 @@ export default {
       return this.$store.state.app.certificates
     }
   },
+  mounted() {
+  },
+  watch: {
+    certificates: {
+      handler() {
+        this.getIdIndex()
+      }
+    }
+  },
   created() {
     this.getIdIndex()
-  },
-  mounted() {
   },
   methods: {
     gotoMenu() {

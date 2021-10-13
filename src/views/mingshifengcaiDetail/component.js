@@ -1,7 +1,7 @@
 // import News from '../../../../components/news'
 // import RecommendRoute from '../../../../components/recommendRoute'
 export default {
-  name: 'mingshifengcai',
+  name: 'mingshifengcaiDetail',
   // components: {
   //   News,
   //   RecommendRoute
@@ -17,6 +17,13 @@ export default {
     }
   },
   mounted() {
+  },
+  watch: {
+    teachers: {
+      handler() {
+        this.getIdIndex()
+      }
+    }
   },
   created() {
     this.getIdIndex()

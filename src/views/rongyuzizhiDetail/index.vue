@@ -2,7 +2,7 @@
 <template>
   <div class="home">
     <van-nav-bar left-text="返回" @click-left="gotoMenu" title="荣誉资质详情" left-arrow> </van-nav-bar>
-    <div class="contentLeft">
+    <div class="contentLeft" v-if="certificates">
       <div class="box">
         <h1>{{ certificates[idIndex].name }}</h1>
         <div class="title">
