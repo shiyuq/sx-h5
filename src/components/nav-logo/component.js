@@ -49,6 +49,9 @@ export default {
   watch: {
     '$route': 'changeActive'
   },
+  created() {
+    this.changeActive(this.$route)
+  },
   methods: {
     showPopup() {
       this.$store.commit('app/setPopup', { value: true })
