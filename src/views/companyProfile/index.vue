@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    <form action="/">
+    <!-- <form action="/">
       <van-search
         v-model="value"
         show-action
@@ -22,7 +22,7 @@
         @search="onSearch"
         @cancel="onCancel"
       ></van-search>
-    </form>
+    </form> -->
   </div>
 </template>
 

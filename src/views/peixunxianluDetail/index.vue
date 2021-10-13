@@ -1,10 +1,6 @@
 <template>
   <div class="home-peixun" v-if="train">
-    <van-nav-bar left-text="返回" @click-left="gotoMenu" :title="train.address" left-arrow>
-      <template #right>
-        <van-icon name="bars" size="18" />
-      </template>
-    </van-nav-bar>
+    <van-nav-bar left-text="返回" @click-left="gotoMenu" :title="train.address" left-arrow />
     <div class="content">
       <div class="title">{{ train.title }}</div>
       <div class="photo">

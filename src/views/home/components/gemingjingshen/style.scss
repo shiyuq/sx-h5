@@ -18,8 +18,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f2f2f2;
-  padding: 40px 0;
+  background-color: $background-color;
+  padding: 30px 0;
   width: 100%;
   h2 {
     color: #be0007;
@@ -43,6 +43,7 @@
   }
 }
 .my-swipe {
+  background-color: #fff;
   // background: './images/3.jpg'; 问题
   .van-swipe-item {
     width: 100%;
@@ -52,6 +53,7 @@
     img {
       width: 100%;
       height: auto;
+      border-radius: 10px;
     }
     .intro {
       margin: 10px;
@@ -73,7 +75,7 @@
   overflow: hidden;
   width: 100%;
   text-align: center;
-  margin-bottom: 30px;
+  background-color: #fff;
   li {
     display: inline-block;
     margin: 10px 6px;

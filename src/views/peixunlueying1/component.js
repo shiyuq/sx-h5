@@ -1,32 +1,43 @@
+// import News from '../../../../components/news'
+// import RecommendRoute from '../../../../components/recommendRoute'
 export default {
+  name: 'peixunlueying1',
+  // components: {
+  //   News,
+  //   RecommendRoute
+  // },
   data() {
     return {
-      lueying: [
-        {
-          name: '培训掠影1',
-          url: require('./images/3.jpg')
-        },
-        {
-          name: '培训掠影2',
-          url: require('./images/4.jpg')
-        },
-        {
-          name: '荣培训掠影3',
-          url: require('./images/3.jpg')
-        },
-        {
-          name: '培训掠影4',
-          url: require('./images/4.jpg')
-        }
-      ]
+      idIndex: null
+    }
+  },
+  computed: {
+    cameras() {
+      return this.$store.state.app.cameras
     }
   },
   mounted() {
   },
+  watch: {
+    cameras: {
+      handler() {
+        this.getIdIndex()
+      }
+    }
+  },
+  created() {
+    this.getIdIndex()
+  },
   methods: {
     gotoMenu() {
       this.$router.go(-1)
-      // this.$router.go('/home')
+    },
+    getIdIndex() {
+      if (this.cameras) {
+        this.idIndex = this.cameras.findIndex((val) => {
+          return val.id === this.$route.params.id
+        })
+      }
     }
   }
 }

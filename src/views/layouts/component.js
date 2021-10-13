@@ -24,7 +24,7 @@ export default {
         {
           title: '联系我们',
           to: '/lianxiwomen',
-          icon: 'comment-circle-o'
+          icon: 'comment-o'
         }
       ]
     }

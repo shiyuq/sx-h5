@@ -1,0 +1,32 @@
+.home {
+  background-color: #fff;
+  padding: 10px;
+  .content {
+    margin: 0 5px;
+    .title {
+      color: #be0008;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    img {
+      margin: 5px;
+      
+    }
+  }
+  .zixun {
+    background: #ccc;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .tuijian {
+    background: #ccc;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    line-height: 20px;
+    font-size: 14px;
+  }
+}
