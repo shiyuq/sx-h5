@@ -1,12 +1,12 @@
 <template>
   <div class="home">
     <Swipe />
-    <Peixunxianlu />
+    <Peixunxianlu :routes="routes" />
     <Sidabaozhang />
     <About />
     <Gemingjingshen />
     <Dianhuazixun />
-    <Gongsixinwen />
+    <Gongsixinwen :news="news" :trends="trends" />
   </div>
 </template>
 

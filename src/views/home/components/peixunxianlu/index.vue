@@ -7,10 +7,12 @@
     </div>
     <div class="fangan">
       <div v-for="(route, index) in routes" :key="index" class="route-container">
-        <div class="route-single">
-          <img :src="route.url" alt="" />
-          <span>{{ route.name }}</span>
-        </div>
+        <router-link :to="'/peixunxianlu/' + route.id">
+          <div class="route-single">
+            <img :src="route.trainPhotoUrl" alt="" />
+            <span>{{ route.title }}</span>
+          </div>
+        </router-link>
       </div>
     </div>
     <div class="more">

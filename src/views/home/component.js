@@ -1,5 +1,5 @@
-//  这里的首页  所有的 每个模块风格记得统一一下
-
+import trainService from '../../api/train-service'
+import newsService from '../../api/news-service'
 import Swipe from './components/swipe'
 import Peixunxianlu from './components/peixunxianlu'
 import Sidabaozhang from './components/sidabaozhang'
@@ -9,9 +9,13 @@ import Dianhuazixun from './components/dianhuazixun'
 import Gongsixinwen from './components/gongsixinwen'
 
 export default {
+  name: 'Home',
   data() {
     return {
-      currentIndex: 0
+      currentIndex: 0,
+      routes: [],
+      news: [],
+      trends: []
     }
   },
 
@@ -25,15 +29,24 @@ export default {
     Gongsixinwen
   },
 
-  // async created() {
-  //   const res = await service.getAddressList()
-  //   console.log('res1111111111 :>> ', res)
-  // },
+  created() {
+    this.initData()
+  },
 
   computed: {},
 
   mounted() {},
 
   methods: {
+    async initData() {
+      const [routes, news, trends] = await Promise.all([
+        trainService.getRecmdTrain({ limit: 4, offset: 0 }),
+        newsService.getNewsList({ type: 1, limit: 5, offset: 0 }),
+        newsService.getNewsList({ type: 2, limit: 5, offset: 0 })
+      ])
+      this.routes = routes && routes.data || []
+      this.news = news && news.data && news.data.rows || []
+      this.trends = trends && trends.data && trends.data.rows || []
+    }
   }
 }

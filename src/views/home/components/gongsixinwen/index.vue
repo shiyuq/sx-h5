@@ -8,15 +8,39 @@
     <!-- v-model="active"  -->
     <van-tabs type="card">
       <van-tab title="公司新闻">
-        <div class="news"></div>
+        <div v-if="news" class="news">
+          <dl v-for="(item, index) in news" :key="index">
+            <router-link :to="'/xinwendongtai/' + item.id">
+              <dt>
+                {{ new Date(item.lastUpdateTime).getMonth() + 1 }}
+                <span>{{ new Date(item.lastUpdateTime).getDate() }}</span>
+              </dt>
+              <dd>
+                <h5>
+                  {{ item.title }}
+                </h5>
+                <div class="editor-content" v-html="item.content"></div>
+              </dd>
+            </router-link>
+          </dl>
+        </div>
       </van-tab>
       <van-tab title="行业动态">
-        <div class="action">
-          <img src="./images/1.jpg" alt="" />
-          <div class="detail">
-            <h5>标题</h5>
-            <p>正文</p>
-          </div>
+        <div v-if="trends" class="news">
+          <dl v-for="(item, index) in trends" :key="index">
+            <router-link :to="'/xinwendongtai/' + item.id">
+              <dt>
+                {{ new Date(item.lastUpdateTime).getMonth() + 1 }}
+                <span>{{ new Date(item.lastUpdateTime).getDate() }}</span>
+              </dt>
+              <dd>
+                <h5>
+                  {{ item.title }}
+                </h5>
+                <div class="editor-content" v-html="item.content"></div>
+              </dd>
+            </router-link>
+          </dl>
         </div>
       </van-tab>
     </van-tabs>
