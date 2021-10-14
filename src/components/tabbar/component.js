@@ -20,6 +20,9 @@ export default {
   watch: {
     '$route': 'changeActive'
   },
+  created() {
+    this.changeActive(this.$route)
+  },
   methods: {
     handleChange(value) {
       this.$emit('change', value)

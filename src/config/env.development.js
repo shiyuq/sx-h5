@@ -5,6 +5,6 @@ module.exports = {
   baseApi: 'https://test.xxx.com/api', // 本地api请求地址,注意：如果你使用了代理，请设置成'/'
   APPID: 'xxx',
   APPSECRET: 'xxx',
-  customerService: 'http://42.192.173.195:7002',
+  customerService: 'http://api.359peixun.cn/',
   $cdn: 'https://www.sunniejs.cn/static'
 }
