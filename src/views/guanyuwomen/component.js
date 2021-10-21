@@ -1,33 +1,26 @@
 import { Toast } from 'vant'
+import companyService from '../../api/company-service'
 
 export default {
   data() {
     return {
       value: '',
       active: 1,
-      routes: [
-        {
-          name: '风采1',
-          url: require('./images/1.jpg')
-        },
-        {
-          name: '风采2',
-          url: require('./images/1.jpg')
-        },
-        {
-          name: '风采3',
-          url: require('./images/1.jpg')
-        },
-        {
-          name: '风采4',
-          url: require('./images/1.jpg')
-        }
-      ]
+      currentPage: 1,
+      totalCount: 0,
+      loading: false,
+      finished: false,
+      companies: null
     }
   },
-  mounted() {
+  created() {
+    this.initData()
   },
   methods: {
+    async initData() {
+      const { data } = await companyService.getCompanyList()
+      this.companies = data
+    },
     onSearch(val) {
       Toast(val)
     },

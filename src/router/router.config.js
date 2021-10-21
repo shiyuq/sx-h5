@@ -133,25 +133,6 @@ export const constantRouterMap = [
         ]
       },
       {
-        path: '/companyProfile',
-        name: 'companyProfile',
-        component: () => import('../views/companyProfileEnter'),
-        children: [
-          {
-            path: '/',
-            name: 'companyProfileList',
-            component: () => import('../views/companyProfile'),
-            meta: { title: '企业风采', keepAlive: false }
-          },
-          {
-            path: '/companyProfile/:id',
-            name: 'companyProfileDetail',
-            component: () => import('../views/companyProfileDetail'),
-            meta: { title: '企业风采详情', keepAlive: false }
-          }
-        ]
-      },
-      {
         path: '/qiyewenhua',
         name: 'Qiyewenhua',
         component: () => import('../views/companyCulture'),

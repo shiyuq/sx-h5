@@ -51,13 +51,15 @@
         </form> -->
       </van-tab>
       <van-tab title="企业风采" name="3">
-        <div class="fangan">
-          <div v-for="(route, index) in routes" :key="index" class="route-container">
-            <div class="route-single">
-              <img :src="route.url" alt="" />
-              <span>{{ route.name }}</span>
+        <div class="content3">
+          <van-list :finished="finished" finished-text="没有更多了" class="photo">
+            <div v-for="(company, index) in companies" :key="index" class="company-container">
+              <div class="company-single">
+                <img :src="company.companyPhotoUrl" alt="" />
+                <!-- <span>{{ company.name }}</span> -->
+              </div>
             </div>
-          </div>
+          </van-list>
         </div>
         <!-- <form action="/">
           <van-search

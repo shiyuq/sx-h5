@@ -3,6 +3,7 @@ import newsService from '../../api/news-service'
 import trainsService from '../../api/train-service'
 import certificateService from '../../api/certificate-service'
 import teacherService from '../../api/teacher-service'
+import companyService from '../../api/company-service'
 const appModule = {
   namespaced: true,
   state: {
@@ -12,7 +13,8 @@ const appModule = {
     news: null,
     trains: null,
     certificates: null,
-    teachers: null
+    teachers: null,
+    company: null
   },
 
   mutations: {
@@ -40,6 +42,9 @@ const appModule = {
     },
     setTeachers(state, data) {
       state.teachers = data
+    },
+    setCompany(state, data) {
+      state.company = data
     }
   },
 
@@ -68,6 +73,11 @@ const appModule = {
       const { limit = 10, offset = 0, id = '' } = params
       const { data } = await teacherService.getTeacherList({ limit, offset, id })
       commit('setTeachers', data)
+    },
+    async setCompany({ commit }, params) {
+      const { limit = 10, offset = 0, id = '' } = params
+      const { data } = await companyService.getCompanyList({ limit, offset, id })
+      commit('setCompany', data)
     },
     setUserName({ commit }, name) {
       commit('SET_USER_NAME', name)
