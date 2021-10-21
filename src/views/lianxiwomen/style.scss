@@ -5,10 +5,14 @@
     display: flex;
     margin: 15px;
     justify-content: center;
+    align-items: center;
     font-size: 15px;
     color: #555;
+    text-align: justify;
     .icon {
       width: 15px;
+      height: 15px;
+      margin:0 3px;
     }
   }
   .navigation {

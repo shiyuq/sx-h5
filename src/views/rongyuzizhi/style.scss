@@ -31,15 +31,15 @@
   }
 }
 
-.van-list ::v-deep .van-list__loading {
-  // .van-list /deep/ .van-list__loading {
+// .van-list ::v-deep .van-list__loading {
+  .van-list /deep/ .van-list__loading {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.photo ::v-deep .van-list__finished-text {
-  // .fangan /deep/ .van-list__finished-text {
+// .photo ::v-deep .van-list__finished-text {
+  .photo /deep/ .van-list__finished-text {
   display: flex;
   justify-content: center;
   width: 100%;
