@@ -6,7 +6,8 @@ export default {
       currentPage: 1,
       totalCount: 0,
       loading: false,
-      finished: false
+      finished: false,
+      lastUpdateTime: ''
     }
   },
   mounted() {
@@ -28,6 +29,11 @@ export default {
       const { data } = await newsService.getNewsList({ limit, offset })
       this.totalCount = data & data.totalCount
       this.news = (data.rows || [])
+      console.log(this.news)
+      for (let x = 0; x <= this.news.length; x++) {
+        this.news[x].lastUpdateTime = this.news[x].lastUpdateTime.replace(/-/g, '/')
+        console.log(this.news[x].lastUpdateTime)
+      }
       if (this.totalCount <= this.news.length) {
         this.finished = true
       }
