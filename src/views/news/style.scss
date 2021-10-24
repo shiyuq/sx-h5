@@ -55,6 +55,7 @@
           font-weight: 200;
           color: #808080;
           line-height: 24px;
+          height: 46px;
           word-spacing: -1.5px;
 
           overflow: hidden;
@@ -68,13 +69,13 @@
     }
   }
 }
-.van-list ::deep .van-list__loading {
+.van-list ::v-deep .van-list__loading {
   // .van-list /deep/ .van-list__loading {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.fangan ::deep .van-list__finished-text {
+.fangan ::v-deep .van-list__finished-text {
   // .fangan /deep/ .van-list__finished-text {
   display: flex;
   justify-content: center;
