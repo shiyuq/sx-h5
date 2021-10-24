@@ -31,9 +31,9 @@ export default {
       const { data } = await newsService.getNewsList({ limit, offset })
       this.totalCount = data & data.totalCount
       this.news = (data.rows || [])
-      console.log(this.news)
-      console.log(this.news[0].content)
-      console.log(this.news[2].content)
+      // console.log(this.news)
+      // console.log(this.news[0].content)
+      // console.log(this.news[2].content)
       if (this.totalCount <= this.news.length) {
         this.finished = true
       }
