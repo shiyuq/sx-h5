@@ -7,13 +7,15 @@ export default {
       totalCount: 0,
       loading: false,
       finished: false,
-      lastUpdateTime: ''
+      lastUpdateTime: '',
+      content: ''
     }
   },
   mounted() {
   },
   created() {
     this.getData()
+    // this.formatTime()
   },
   methods: {
     gotoMenu() {
@@ -30,14 +32,25 @@ export default {
       this.totalCount = data & data.totalCount
       this.news = (data.rows || [])
       console.log(this.news)
-      for (let x = 0; x <= this.news.length; x++) {
-        this.news[x].lastUpdateTime = this.news[x].lastUpdateTime.replace(/-/g, '/')
-        console.log(this.news[x].lastUpdateTime)
-      }
       if (this.totalCount <= this.news.length) {
         this.finished = true
       }
       this.loading = false
+      return this.news
     }
+    // formatTime() {
+    //   for (let x = 0; x <= this.news.length; x++) {
+    //     this.lastUpdateTime = this.news[x].lastUpdateTime((val) => {
+    //       return val.lastUpdateTime === this.news[x].lastUpdateTime
+    //     })
+    //     this.lastUpdateTime = this.news[x].lastUpdateTime.replace(/-/g, '/')
+    //     this.news[x].lastUpdateTime = this.lastUpdateTime
+    //     console.log(this.news[x].lastUpdateTime)
+    //   }
+    // }
   }
 }
+// for (let x = 0; x <= this.news.length; x++) {
+//   this.news[x].content = this.news[x].content.slice(0, 100) + '...'
+//   console.log(this.news[x].content)
+// }
