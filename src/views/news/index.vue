@@ -8,14 +8,14 @@
           <dl v-for="(item, index) in news" :key="index">
             <router-link :to="'/xinwendongtai/' + item.id">
               <dt>
-                {{ new Date(item.lastUpdateTime).getMonth() + 1 }}
-                <span>{{ new Date(item.lastUpdateTime).getDate() }}</span>
+                {{ new Date(item.lastUpdateTime.replace(/-/g, '/')).getMonth() + 1 }}
+                <span>{{ new Date(item.lastUpdateTime.replace(/-/g, '/')).getDate() }}</span>
               </dt>
               <dd>
                 <h5>
                   {{ item.title }}
                 </h5>
-                <div class="editor-content" v-html="item.content"></div>
+                <div class="editor-content" v-html="item.content.replace(/div/g, 'p')"></div>
               </dd>
             </router-link>
           </dl>
