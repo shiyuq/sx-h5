@@ -15,7 +15,7 @@
                 <h5>
                   {{ item.title }}
                 </h5>
-                <div class="editor-content" v-html="item.content"></div>
+                <div class="editor-content" v-html="item.content.replace(/div/g, 'p')"></div>
               </dd>
             </router-link>
           </dl>
