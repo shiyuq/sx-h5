@@ -8,7 +8,11 @@
     </div>
     <div class="lianxi">
       <img class="icon" :src="require('./images/tele.png')" />
-      电话： 0991-6378522 15083931223
+      手机： 15083931223 13636808088
+    </div>
+    <div class="lianxi">
+      <img class="icon" :src="require('./images/phone.png')" />
+      座机： 0991-6378522
     </div>
     <div class="lianxi">
       <img class="icon" :src="require('./images/mail.png')" />

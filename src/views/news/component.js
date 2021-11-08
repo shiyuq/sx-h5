@@ -7,7 +7,13 @@ export default {
       totalCount: 0,
       loading: false,
       finished: false,
-      lastUpdateTime: ''
+      lastUpdateTime: '',
+      content: ''
+    }
+  },
+  computed: {
+    news() {
+      return this.$store.state.app.news
     }
   },
   mounted() {
@@ -30,6 +36,10 @@ export default {
       this.totalCount = data & data.totalCount
       this.news = (data.rows || [])
       console.log(this.news)
+      for (let x = 0; x <= this.news.length; x++) {
+        this.news[x].content.splice(40, this.news[x].content.length)
+        this.news[x].content = this.news[x].content + '...'
+      }
       for (let x = 0; x <= this.news.length; x++) {
         this.news[x].lastUpdateTime = this.news[x].lastUpdateTime.replace(/-/g, '/')
         console.log(this.news[x].lastUpdateTime)
