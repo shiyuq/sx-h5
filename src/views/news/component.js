@@ -9,14 +9,11 @@ export default {
       finished: false,
       lastUpdateTime: '',
       content: ''
-<<<<<<< HEAD
     }
   },
   computed: {
     news() {
       return this.$store.state.app.news
-=======
->>>>>>> 2caba1d7ff285ffb9796cc59c2be2d2531cd134b
     }
   },
   mounted() {
@@ -39,21 +36,9 @@ export default {
       const { data } = await newsService.getNewsList({ limit, offset })
       this.totalCount = data & data.totalCount
       this.news = (data.rows || [])
-<<<<<<< HEAD
-      console.log(this.news)
-      for (let x = 0; x <= this.news.length; x++) {
-        this.news[x].content.splice(40, this.news[x].content.length)
-        this.news[x].content = this.news[x].content + '...'
-      }
-      for (let x = 0; x <= this.news.length; x++) {
-        this.news[x].lastUpdateTime = this.news[x].lastUpdateTime.replace(/-/g, '/')
-        console.log(this.news[x].lastUpdateTime)
-      }
-=======
       // console.log(this.news)
       console.log(this.news[0].content)
       console.log(this.news[2].content)
->>>>>>> 2caba1d7ff285ffb9796cc59c2be2d2531cd134b
       if (this.totalCount <= this.news.length) {
         this.finished = true
       }
