@@ -33,7 +33,7 @@
       </van-tab>
       <van-tab title="企业文化" name="2">
         <div class="content2">
-          <img src="./images/1.jpg" />
+          <img src="./images/2.jpg" />
           <div class="zhengwen2">践行三五九旅精神</div>
           <div class="zhengwen2">胡杨精神和兵团精神</div>
           <div class="zhengwen2">传承红色基因</div>
