@@ -23,7 +23,7 @@
         @mouserenter="setAutoplay()"
         @mouserleave="changeAutoplay()"
       >
-        <img src="./images/arrow.png" alt="" />
+        <!-- <img src="./images/arrow.png" alt="" /> -->
         {{ item.title }}
       </li>
     </ul>
