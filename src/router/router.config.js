@@ -137,6 +137,12 @@ export const constantRouterMap = [
         name: 'Qiyewenhua',
         component: () => import('../views/companyCulture'),
         meta: { title: '企业文化', keepAlive: false }
+      },
+      {
+        path: '/zhongxinketi',
+        name: 'Zhongxinketi',
+        component: () => import('../views/zhongxinketi'),
+        meta: { title: '中心课题', keepAlive: false }
       }
       // {
       //   path: '/rencaizhaopin',

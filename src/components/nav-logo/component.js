@@ -20,6 +20,10 @@ export default {
           name: '名师风采'
         },
         {
+          router: '/zhongxinketi',
+          name: '中心课题'
+        },
+        {
           router: '/rongyuzizhi',
           name: '荣誉资质'
         },
