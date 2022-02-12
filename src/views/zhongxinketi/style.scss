@@ -1,0 +1,31 @@
+.home-zhongxinketi {
+  background: #fff;
+  margin: 0;
+  text-align: center;
+  .content {
+    margin: 0;
+    height: 1000px;
+    background-color: #fff;
+    .zhengwen {
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+      margin: 5px 0;
+      padding: 5px 0;
+      border-bottom: dotted #d7d7d7 1px;
+    }
+  }
+}
+.van-list ::v-deep .van-list__loading {
+  // .van-list /deep/ .van-list__loading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.fangan ::v-deep .van-list__finished-text {
+  // .photo /deep/ .van-list__finished-text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

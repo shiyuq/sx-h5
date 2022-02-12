@@ -1,0 +1,101 @@
+.home {
+  .intro {
+    padding: 0 10px;
+    h5 {
+      font-size: 18px;
+      color: #333;
+      text-align: center;
+      padding: 10px 0;
+    }
+    p {
+      font-size: 14px;
+      color: #555;
+      text-align: justify;
+    }
+  }
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $background-color;
+  padding: 30px 0;
+  width: 100%;
+  h2 {
+    color: #be0007;
+    font-size: 0.67rem;
+  }
+  span {
+    font-size: 0.53rem;
+    color: #333;
+    align-items: center;
+    font-weight: normal;
+  }
+  p {
+    color: #818181;
+    font-size: 0.4rem;
+  }
+  .redline {
+    margin-top: 10px;
+    width: 20%;
+    border: solid 1px #be0007;
+    background-color: #f00e2a;
+  }
+}
+.my-swipe {
+  background-color: #fff;
+  // background: './images/3.jpg'; 问题
+  .van-swipe-item {
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    .intro {
+      margin: 10px;
+      h5 {
+        margin: 5px 0;
+        font-size: 17px;
+        text-align: center;
+        color: #333;
+      }
+      p {
+        font-size: 15px;
+        text-align: justify;
+        color: #555;
+      }
+    }
+  }
+}
+.menu {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  li {
+    display: inline-block;
+    margin: 10px 20px;
+    width: 80px;
+    height: 30px;
+    background-color: rgba(247, 240, 240, 0.5);
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    position: relative;
+    color: #be0008;
+    font-weight: 700;
+    cursor: pointer;
+    img {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+    }
+  }
+  .cur {
+    background-color: #be0008;
+    border-color: #be0008;
+    color: #fff;
+    img {
+      display: block;
+    }
+  }
+}

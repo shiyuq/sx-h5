@@ -5,6 +5,8 @@
     <Sidabaozhang />
     <About />
     <Gemingjingshen />
+    <Huihuanglicheng />
+    <Weidarongyao />
     <Dianhuazixun />
     <Gongsixinwen :news="news" :trends="trends" />
   </div>

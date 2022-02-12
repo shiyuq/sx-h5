@@ -7,6 +7,8 @@ import About from './components/about'
 import Gemingjingshen from './components/gemingjingshen'
 import Dianhuazixun from './components/dianhuazixun'
 import Gongsixinwen from './components/gongsixinwen'
+import Huihuanglicheng from './components/huihuanglicheng'
+import Weidarongyao from './components/weidarongyao'
 
 export default {
   name: 'Home',
@@ -26,7 +28,9 @@ export default {
     About,
     Gemingjingshen,
     Dianhuazixun,
-    Gongsixinwen
+    Gongsixinwen,
+    Huihuanglicheng,
+    Weidarongyao
   },
 
   created() {
